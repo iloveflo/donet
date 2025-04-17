@@ -1,0 +1,116 @@
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\ClothingStore.exe.config
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\ClothingStore.exe
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\ClothingStore.pdb
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\BouncyCastle.Cryptography.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\Google.Protobuf.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\K4os.Compression.LZ4.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\K4os.Hash.xxHash.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\MySql.Data.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Buffers.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.IO.Pipelines.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Memory.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Numerics.Vectors.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\ZstdSharp.dll
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\BouncyCastle.Cryptography.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\Google.Protobuf.pdb
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\Google.Protobuf.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\K4os.Compression.LZ4.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\K4os.Hash.xxHash.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\MySql.Data.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Buffers.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.IO.Pipelines.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Memory.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Numerics.Vectors.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\baitap c#\ClothingStore\ClothingStore\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.csproj.AssemblyReference.cache
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.csproj.SuggestedBindingRedirects.cache
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.exe.config
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.Adimin.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.Khachhang_admin.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.NhanVien_Admin.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.SanPham_Admin.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Main.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Properties.Resources.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Register.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.ThongKe.ThongKe.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.csproj.GenerateResource.cache
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.csproj.CoreCompileInputs.cache
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\Clothing.5BC3D267.Up2Date
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.exe
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.pdb
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.DoiMatKhau.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.HoaDonBan.HoaDonBan.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.HoaDonNhap.HoaDonNhap.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.KhachHang.KhachHang.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.NhanVien.NhanVien.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.ThongKe.ThongKe1.resources
+D:\baitap c#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.ThongKe.DoanhThu.resources
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\ClothingStore.exe.config
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\ClothingStore.exe
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\ClothingStore.pdb
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\BouncyCastle.Cryptography.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\Google.Protobuf.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\K4os.Compression.LZ4.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\K4os.Hash.xxHash.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\MySql.Data.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Buffers.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.IO.Pipelines.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Memory.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Numerics.Vectors.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\ZstdSharp.dll
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\BouncyCastle.Cryptography.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\Google.Protobuf.pdb
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\Google.Protobuf.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\K4os.Compression.LZ4.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\K4os.Hash.xxHash.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\MySql.Data.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Buffers.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.IO.Pipelines.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Memory.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Numerics.Vectors.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.csproj.AssemblyReference.cache
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.csproj.SuggestedBindingRedirects.cache
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.exe.config
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.Adimin.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.DoiMatKhau.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.Khachhang_admin.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.NhanVien_Admin.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.SanPham_Admin.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.HoaDonBan.HoaDonBan.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.HoaDonNhap.HoaDonNhap.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.KhachHang.KhachHang.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Main.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.NhanVien.NhanVien.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Properties.Resources.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Register.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.ThongKe.DoanhThu.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.ThongKe.ThongKe.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.ThongKe.ThongKe1.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.csproj.GenerateResource.cache
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.csproj.CoreCompileInputs.cache
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\Clothing.5BC3D267.Up2Date
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.exe
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.pdb
