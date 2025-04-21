@@ -114,6 +114,7 @@
             this.dataGridViewHoaDonNhap.RowTemplate.Height = 24;
             this.dataGridViewHoaDonNhap.Size = new System.Drawing.Size(1027, 287);
             this.dataGridViewHoaDonNhap.TabIndex = 4;
+            this.dataGridViewHoaDonNhap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHoaDonNhap_CellClick);
             // 
             // button6
             // 

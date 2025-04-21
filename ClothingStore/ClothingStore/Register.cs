@@ -71,11 +71,12 @@ namespace ClothingStore
             string password = txtPassword.Text.Trim();
             string rePassword = txtRePassword.Text.Trim();
             string maTaiKhoan = txtMaTaiKhoan.Text.Trim();
+            string email = txtEmail.Text.Trim();
 
             // 🔹 Kiểm tra rỗng
             if (string.IsNullOrEmpty(hoTen) || string.IsNullOrEmpty(soDienThoai) || string.IsNullOrEmpty(diaChi) ||
                 string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(rePassword) ||
-                string.IsNullOrEmpty(maTaiKhoan))
+                string.IsNullOrEmpty(maTaiKhoan)|| string.IsNullOrEmpty(email))
             {
                 MessageBox.Show("Hãy nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -100,54 +101,76 @@ namespace ClothingStore
                 MessageBox.Show("CAPTCHA không đúng! Vui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            // 🔹 Kiểm tra xem UserName và MaTaiKhoan đã tồn tại chưa
+            //kiểm tra xem mã tài khoản, sdt, email có tồn tại hay chưa
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
                 {
                     conn.Open();
                     string queryCheck = @"
-            SELECT COUNT(*) 
-            FROM TaiKhoan 
-            WHERE TenDangNhap = @userName OR MaTaiKhoan = @maTaiKhoan;
-            
-            SELECT COUNT(*) 
-            FROM KhachHang 
-            WHERE SoDienThoai = @soDienThoai;";
+                   
+                    SELECT COUNT(*) 
+                    FROM TaiKhoan 
+                    WHERE TenDangNhap = @userName OR MaTaiKhoan = @maTaiKhoan;
+
+                    
+                    SELECT COUNT(*) 
+                    FROM (
+                        SELECT SoDienThoai FROM KhachHang WHERE SoDienThoai = @soDienThoai
+                        UNION ALL
+                        SELECT SoDienThoai FROM NhanVien WHERE SoDienThoai = @soDienThoai
+                    ) AS TempSDT;
+
+                    
+                    SELECT COUNT(*) 
+                    FROM (
+                        SELECT Email FROM KhachHang WHERE Email = @email
+                        UNION ALL
+                        SELECT Email FROM NhanVien WHERE Email = @email
+                    ) AS TempEmail;";
 
                     using (MySqlCommand cmd = new MySqlCommand(queryCheck, conn))
                     {
                         cmd.Parameters.AddWithValue("@userName", userName);
                         cmd.Parameters.AddWithValue("@maTaiKhoan", maTaiKhoan);
                         cmd.Parameters.AddWithValue("@soDienThoai", soDienThoai);
+                        cmd.Parameters.AddWithValue("@email", email);
 
                         using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
                             reader.Read();
                             int countTaiKhoan = Convert.ToInt32(reader[0]);
 
-                            reader.NextResult(); // Chuyển sang kết quả truy vấn tiếp theo
+                            reader.NextResult();
                             reader.Read();
                             int countSDT = Convert.ToInt32(reader[0]);
 
+                            reader.NextResult();
+                            reader.Read();
+                            int countEmail = Convert.ToInt32(reader[0]);
+
                             if (countTaiKhoan > 0)
                             {
-                                MessageBox.Show("Tên Tài Khoản hoặc Mã Tài Khoản đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Tên tài khoản hoặc mã tài khoản đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return;
                             }
 
                             if (countSDT > 0)
                             {
-                                MessageBox.Show("Số điện thoại này đã được đăng ký bởi khách hàng khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Số điện thoại đã tồn tại trong hệ thống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return;
                             }
 
-
+                            if (countEmail > 0)
+                            {
+                                MessageBox.Show("Email đã tồn tại trong hệ thống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
                         }
 
                         // 🔹 Nếu tất cả đều hợp lệ, tiến hành thêm dữ liệu vào CSDL
                         string queryInsertTaiKhoan = "INSERT INTO TaiKhoan (MaTaiKhoan, TenDangNhap, MatKhau, LoaiTaiKhoan) VALUES (@maTaiKhoan, @userName, @password, 'KhachHang')";
-                        string queryInsertKhachHang = "INSERT INTO KhachHang (MaKhachHang, TenKhach, SoDienThoai, DiaChi,MaTaiKhoan) VALUES (@maKhachHang, @hoTen, @soDienThoai, @diaChi,@maTaiKhoan)";
+                        string queryInsertKhachHang = "INSERT INTO KhachHang (MaKhachHang, TenKhach, SoDienThoai, DiaChi,MaTaiKhoan,Email) VALUES (@maKhachHang, @hoTen, @soDienThoai, @diaChi,@maTaiKhoan,@email)";
 
                         using (MySqlCommand cmdTaiKhoan = new MySqlCommand(queryInsertTaiKhoan, conn))
                         {
@@ -164,6 +187,7 @@ namespace ClothingStore
                             cmdKhachHang.Parameters.AddWithValue("@hoTen", hoTen);
                             cmdKhachHang.Parameters.AddWithValue("@soDienThoai", soDienThoai);
                             cmdKhachHang.Parameters.AddWithValue("@diaChi", diaChi);
+                            cmdKhachHang.Parameters.AddWithValue("@email", email);
                             cmdKhachHang.ExecuteNonQuery();
                         }
 

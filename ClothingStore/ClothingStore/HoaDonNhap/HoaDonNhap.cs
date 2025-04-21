@@ -49,13 +49,12 @@ namespace ClothingStore.HoaDonNhap
             }
         }
 
-        // Hàm load dữ liệu hóa đơn nhập vào DataGridView
         private void LoadHoaDonNhapData()
         {
             try
             {
                 connection.Open();
-                string query = "SELECT hd.SoHoaDonNhap, ncc.TenNCC, ct.MaQuanAo, ct.SoLuong, ct.DonGia, ct.GiamGia, ct.SoLuong * ct.DonGia * (1 - ct.GiamGia / 100) AS ThanhTien " +
+                string query = "SELECT hd.SoHoaDonNhap, hd.MaNhanVien, ncc.TenNCC, ct.MaQuanAo, ct.SoLuong, ct.DonGia, ct.GiamGia, ct.SoLuong * ct.DonGia * (1 - ct.GiamGia / 100) AS ThanhTien " +
                                "FROM HoaDonNhap hd " +
                                "JOIN NhaCungCap ncc ON hd.MaNCC = ncc.MaNCC " +
                                "JOIN ChiTietHoaDonNhap ct ON hd.SoHoaDonNhap = ct.SoHoaDonNhap";
@@ -71,6 +70,35 @@ namespace ClothingStore.HoaDonNhap
             finally
             {
                 connection.Close();
+            }
+        }
+
+        private void dataGridViewHoaDonNhap_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridViewHoaDonNhap.Rows[e.RowIndex];
+
+                // Hiển thị giá trị từ các cột trong DataGridView vào các TextBox tương ứng
+                textBoxSoHoaDonNhap.Text = row.Cells["SoHoaDonNhap"].Value?.ToString();
+                textBoxMaQuanAo.Text = row.Cells["MaQuanAo"].Value?.ToString();
+                textBoxSoLuongNhap.Text = row.Cells["SoLuong"].Value?.ToString();
+                textBoxDonGiaNhap.Text = row.Cells["DonGia"].Value?.ToString();
+                textBoxGiamGia.Text = row.Cells["GiamGia"].Value?.ToString();
+
+                // Nếu bạn đã JOIN được mã nhân viên từ truy vấn, ví dụ là MaNhanVien
+                textBoxMaNhanVien.Text = row.Cells["MaNhanVien"].Value?.ToString();
+
+                // Lấy tên nhà cung cấp từ cột TenNCC và chọn trong ComboBox
+                string tenNCC = row.Cells["TenNCC"].Value?.ToString();
+                if (!string.IsNullOrEmpty(tenNCC) && comboBoxNhaCungCap.Items.Contains(tenNCC))
+                {
+                    comboBoxNhaCungCap.SelectedItem = tenNCC;
+                }
+                else
+                {
+                    comboBoxNhaCungCap.SelectedIndex = -1; // Clear selection nếu không khớp
+                }
             }
         }
 

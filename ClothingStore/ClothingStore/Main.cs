@@ -107,5 +107,11 @@ namespace ClothingStore
             registerForm.Show();
             this.Hide();
         }
+        private void btnQuenMatKhau_Click(object sender, EventArgs e)
+        {
+            Admin.QuenMatKhau quenMatKhau= new Admin.QuenMatKhau();
+            quenMatKhau.Show();
+            this.Hide();
+        }
     }
 }

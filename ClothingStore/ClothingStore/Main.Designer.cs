@@ -38,6 +38,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.chkShowPassword = new System.Windows.Forms.CheckBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +78,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(369, 458);
+            this.button1.Location = new System.Drawing.Point(235, 467);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 43);
             this.button1.TabIndex = 5;
@@ -88,7 +89,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(606, 458);
+            this.button2.Location = new System.Drawing.Point(433, 467);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(142, 43);
             this.button2.TabIndex = 6;
@@ -133,12 +134,24 @@
             this.txtUserName.Size = new System.Drawing.Size(379, 38);
             this.txtUserName.TabIndex = 10;
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button3.Location = new System.Drawing.Point(606, 458);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(142, 60);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Quên Mật Khẩu";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnQuenMatKhau_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1024, 665);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.chkShowPassword);
             this.Controls.Add(this.txtPassword);
@@ -168,5 +181,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.CheckBox chkShowPassword;
         private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.Button button3;
     }
 }

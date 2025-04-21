@@ -44,7 +44,7 @@ namespace ClothingStore.Admin
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT NhanVien.MaNhanVien, TenNhanVien, NgaySinh, DiaChi, SoDienThoai, GioiTinh, TenCongViec " +
+                string query = "SELECT NhanVien.MaNhanVien, TenNhanVien, NgaySinh, DiaChi, SoDienThoai, GioiTinh, TenCongViec, Email " +
                                "FROM NhanVien JOIN CongViec ON NhanVien.MaCongViec = CongViec.MaCongViec";
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
@@ -59,13 +59,30 @@ namespace ClothingStore.Admin
             if (e.RowIndex >= 0) // Đảm bảo chọn dòng hợp lệ
             {
                 DataGridViewRow row = dgvNhanVien.Rows[e.RowIndex];
-                txtMaNhanVien.Text = row.Cells["MaNhanVien"].Value.ToString();
-                txtTenNhanVien.Text = row.Cells["TenNhanVien"].Value.ToString();
-                dtpNgaySinh.Value = Convert.ToDateTime(row.Cells["NgaySinh"].Value);
-                txtDiaChi.Text = row.Cells["DiaChi"].Value.ToString();
-                txtSoDienThoai.Text = row.Cells["SoDienThoai"].Value.ToString();
-                cmbGioiTinh.SelectedItem = row.Cells["GioiTinh"].Value.ToString();
-                cmbCongViec.SelectedItem = row.Cells["TenCongViec"].Value.ToString();
+
+                txtMaNhanVien.Text = row.Cells["MaNhanVien"].Value?.ToString() ?? "";
+                txtTenNhanVien.Text = row.Cells["TenNhanVien"].Value?.ToString() ?? "";
+                
+
+                // Xử lý NgaySinh nếu có giá trị
+                if (row.Cells["NgaySinh"].Value != DBNull.Value && row.Cells["NgaySinh"].Value != null)
+                    dtpNgaySinh.Value = Convert.ToDateTime(row.Cells["NgaySinh"].Value);
+                else
+                    dtpNgaySinh.Value = DateTime.Now; // hoặc giá trị mặc định bạn muốn
+
+                txtDiaChi.Text = row.Cells["DiaChi"].Value?.ToString() ?? "";
+                txtEmail.Text = row.Cells["Email"].Value?.ToString() ?? "";
+                txtSoDienThoai.Text = row.Cells["SoDienThoai"].Value?.ToString() ?? "";
+
+                // Set giới tính nếu có
+                string gioiTinh = row.Cells["GioiTinh"].Value?.ToString();
+                if (!string.IsNullOrEmpty(gioiTinh))
+                    cmbGioiTinh.SelectedItem = gioiTinh;
+
+                // Set công việc nếu có
+                string tenCongViec = row.Cells["TenCongViec"].Value?.ToString();
+                if (!string.IsNullOrEmpty(tenCongViec))
+                    cmbCongViec.SelectedItem = tenCongViec;
             }
         }
 
@@ -73,7 +90,7 @@ namespace ClothingStore.Admin
         {
             if (string.IsNullOrWhiteSpace(txtTenNhanVien.Text) ||
                 string.IsNullOrWhiteSpace(txtDiaChi.Text) ||
-                string.IsNullOrWhiteSpace(txtSoDienThoai.Text) ||
+                string.IsNullOrWhiteSpace(txtSoDienThoai.Text) || string.IsNullOrWhiteSpace(txtEmail.Text)||
                 cmbGioiTinh.SelectedItem == null || cmbCongViec.SelectedItem == null)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
@@ -95,13 +112,46 @@ namespace ClothingStore.Admin
                     return;
                 }
 
+                // 2. Kiểm tra số điện thoại có bị trùng ở cả 2 bảng
+                string checkSDTQuery = @"
+        SELECT COUNT(*) FROM (
+            SELECT SoDienThoai FROM NhanVien WHERE SoDienThoai = @SDT
+            UNION ALL
+            SELECT SoDienThoai FROM KhachHang WHERE SoDienThoai = @SDT
+        ) AS Temp";
+                MySqlCommand checkSDTCmd = new MySqlCommand(checkSDTQuery, conn);
+                checkSDTCmd.Parameters.AddWithValue("@SDT", txtSoDienThoai.Text);
+                int existsSDT = Convert.ToInt32(checkSDTCmd.ExecuteScalar());
+                if (existsSDT > 0)
+                {
+                    MessageBox.Show("Số điện thoại đã tồn tại!");
+                    return;
+                }
+
+                // 3. Kiểm tra email có bị trùng ở cả 2 bảng
+                string checkEmailQuery = @"
+        SELECT COUNT(*) FROM (
+            SELECT Email FROM NhanVien WHERE Email = @Email
+            UNION ALL
+            SELECT Email FROM KhachHang WHERE Email = @Email
+        ) AS Temp";
+                MySqlCommand checkEmailCmd = new MySqlCommand(checkEmailQuery, conn);
+                checkEmailCmd.Parameters.AddWithValue("@Email", txtEmail.Text);
+                int existsEmail = Convert.ToInt32(checkEmailCmd.ExecuteScalar());
+                if (existsEmail > 0)
+                {
+                    MessageBox.Show("Email đã tồn tại!");
+                    return;
+                }
+
                 // Thêm nhân viên vào bảng NhanVien
-                string insertQuery = "INSERT INTO NhanVien (TenNhanVien, NgaySinh, DiaChi, SoDienThoai, GioiTinh, MaCongViec) " +
-                                     "VALUES (@TenNV, @NgaySinh, @DiaChi, @SDT, @GioiTinh, (SELECT MaCongViec FROM CongViec WHERE TenCongViec=@CongViec))";
+                string insertQuery = "INSERT INTO NhanVien (TenNhanVien, NgaySinh, DiaChi,Email, SoDienThoai, GioiTinh, MaCongViec) " +
+                                     "VALUES (@TenNV, @NgaySinh, @DiaChi,@Email, @SDT, @GioiTinh, (SELECT MaCongViec FROM CongViec WHERE TenCongViec=@CongViec))";
                 MySqlCommand cmd = new MySqlCommand(insertQuery, conn);
                 cmd.Parameters.AddWithValue("@TenNV", txtTenNhanVien.Text);
                 cmd.Parameters.AddWithValue("@NgaySinh", dtpNgaySinh.Value);
                 cmd.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
+                cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
                 cmd.Parameters.AddWithValue("@SDT", txtSoDienThoai.Text);
                 cmd.Parameters.AddWithValue("@GioiTinh", cmbGioiTinh.SelectedItem.ToString());
                 cmd.Parameters.AddWithValue("@CongViec", cmbCongViec.SelectedItem.ToString());
@@ -120,6 +170,14 @@ namespace ClothingStore.Admin
                 cmdTK.Parameters.AddWithValue("@TenDangNhap", maNhanVien);
                 cmdTK.Parameters.AddWithValue("@MatKhau", maNhanVien); // Mật khẩu mặc định
                 cmdTK.ExecuteNonQuery();
+
+                //thêm lại mã tài khoản vào bảng nhân viên;
+                string updateNV = "UPDATE NhanVien SET MaTaiKhoan = @MaTaiKhoan WHERE MaNhanVien = @MaNhanVien";
+                MySqlCommand cmdNV = new MySqlCommand(updateNV, conn);
+                cmdNV.Parameters.AddWithValue("@MaTaiKhoan", maNhanVien);
+                cmdNV.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
+                cmdNV.ExecuteNonQuery();
+
 
                 MessageBox.Show("Đã thêm nhân viên thành công!");
                 LoadDataGridView();
@@ -193,15 +251,17 @@ namespace ClothingStore.Admin
                 try
                 {
                     conn.Open();
-                    string updateQuery = "UPDATE NhanVien SET TenNhanVien = @TenNhanVien, NgaySinh = @NgaySinh, DiaChi = @DiaChi, SoDienThoai = @SoDienThoai, GioiTinh = @GioiTinh, MaCongViec = (SELECT MaCongViec FROM CongViec WHERE TenCongViec = @TenCongViec) WHERE MaNhanVien = @MaNhanVien";
+                    string updateQuery = "UPDATE NhanVien SET TenNhanVien = @TenNhanVien, NgaySinh = @NgaySinh, DiaChi = @DiaChi,Email=@Email, SoDienThoai = @SoDienThoai, GioiTinh = @GioiTinh, MaCongViec = (SELECT MaCongViec FROM CongViec WHERE TenCongViec = @TenCongViec) WHERE MaNhanVien = @MaNhanVien";
                     MySqlCommand cmd = new MySqlCommand(updateQuery, conn);
                     cmd.Parameters.AddWithValue("@TenNhanVien", txtTenNhanVien.Text);
                     cmd.Parameters.AddWithValue("@NgaySinh", dtpNgaySinh.Value);
                     cmd.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
+                    cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
                     cmd.Parameters.AddWithValue("@SoDienThoai", txtSoDienThoai.Text);
                     cmd.Parameters.AddWithValue("@GioiTinh", cmbGioiTinh.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@TenCongViec", cmbCongViec.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@MaNhanVien", txtMaNhanVien.Text);
+
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Đã cập nhật thông tin nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -247,7 +307,7 @@ namespace ClothingStore.Admin
                 conn.Open();
 
                 // Truy vấn dữ liệu từ bảng NhanVien kết hợp với bảng CongViec để lấy thông tin công việc
-                string query = "SELECT N.MaNhanVien, N.TenNhanVien, N.NgaySinh, N.DiaChi, N.SoDienThoai, N.GioiTinh, C.TenCongViec " +
+                string query = "SELECT N.MaNhanVien, N.TenNhanVien, N.NgaySinh, N.DiaChi,N.Email, N.SoDienThoai, N.GioiTinh, C.TenCongViec " +
                                "FROM NhanVien N " +
                                "JOIN CongViec C ON N.MaCongViec = C.MaCongViec";
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
@@ -262,6 +322,7 @@ namespace ClothingStore.Admin
             txtMaNhanVien.Clear();
             txtTenNhanVien.Clear();
             txtDiaChi.Clear();
+            txtEmail.Clear();
             txtSoDienThoai.Clear();
             cmbGioiTinh.SelectedIndex = -1;
             cmbCongViec.SelectedIndex = -1;

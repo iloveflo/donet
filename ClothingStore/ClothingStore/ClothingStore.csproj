@@ -122,6 +122,24 @@
     <Compile Include="Admin\NhanVien_Admin.Designer.cs">
       <DependentUpon>NhanVien_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\OTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\OTP.Designer.cs">
+      <DependentUpon>OTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OTP1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\OTP1.Designer.cs">
+      <DependentUpon>OTP1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\QuenMatKhau.Designer.cs">
+      <DependentUpon>QuenMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\SanPham_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +214,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\NhanVien_Admin.resx">
       <DependentUpon>NhanVien_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\OTP.resx">
+      <DependentUpon>OTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\OTP1.resx">
+      <DependentUpon>OTP1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\QuenMatKhau.resx">
+      <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\SanPham_Admin.resx">
       <DependentUpon>SanPham_Admin.cs</DependentUpon>

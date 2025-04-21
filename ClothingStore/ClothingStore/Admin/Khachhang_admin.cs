@@ -57,6 +57,7 @@ namespace ClothingStore.Admin
                 txtTenKhach.Text = row.Cells["TenKhach"].Value.ToString();
                 txtDiaChi.Text = row.Cells["DiaChi"].Value.ToString();
                 txtSoDienThoai.Text = row.Cells["SoDienThoai"].Value.ToString();
+                txtEmail.Text = row.Cells["Email"].Value.ToString();
             }
         }
 
@@ -121,12 +122,13 @@ namespace ClothingStore.Admin
                 try
                 {
                     conn.Open();
-                    string updateQuery = "UPDATE KhachHang SET TenKhach = @TenKhach, DiaChi = @DiaChi, SoDienThoai = @SoDienThoai WHERE MaKhachHang = @MaKhachHang";
+                    string updateQuery = "UPDATE KhachHang SET TenKhach = @TenKhach, DiaChi = @DiaChi, SoDienThoai = @SoDienThoai, Email=@Email WHERE MaKhachHang = @MaKhachHang";
                     MySqlCommand cmd = new MySqlCommand(updateQuery, conn);
                     cmd.Parameters.AddWithValue("@TenKhach", txtTenKhach.Text);
                     cmd.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
                     cmd.Parameters.AddWithValue("@SoDienThoai", txtSoDienThoai.Text);
                     cmd.Parameters.AddWithValue("@MaKhachHang", txtMaKhachHang.Text);
+                    cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Đã cập nhật thông tin khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -189,6 +191,7 @@ namespace ClothingStore.Admin
             txtTenKhach.Clear();
             txtDiaChi.Clear();
             txtSoDienThoai.Clear();
+            txtEmail.Clear();
         }
     }
 }
