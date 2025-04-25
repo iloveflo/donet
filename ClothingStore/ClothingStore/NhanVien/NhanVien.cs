@@ -500,5 +500,11 @@ namespace ClothingStore.NhanVien
             ThongKe.ThongKe thongKe= new ThongKe.ThongKe();
             thongKe.Show();
         }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HoaDonBan.HoaDonBan hoaDonBan= new HoaDonBan.HoaDonBan();
+            hoaDonBan.Show();
+        }
     }
 }

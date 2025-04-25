@@ -45,6 +45,7 @@ namespace ClothingStore.HoaDonBan
             this.txtTenQuanAo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtSoLuongBan = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +69,7 @@ namespace ClothingStore.HoaDonBan
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1064, 287);
+            this.dataGridView1.Size = new System.Drawing.Size(1064, 237);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -199,12 +200,23 @@ namespace ClothingStore.HoaDonBan
             this.txtSoLuongBan.Size = new System.Drawing.Size(232, 34);
             this.txtSoLuongBan.TabIndex = 48;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(522, 691);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 40);
+            this.button1.TabIndex = 49;
+            this.button1.Text = "Xuất hóa đơn";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnInHoaDon_Click);
+            // 
             // HoaDonBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1065, 759);
+            this.ClientSize = new System.Drawing.Size(1064, 759);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtSoLuongBan);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTenQuanAo);
@@ -245,5 +257,6 @@ namespace ClothingStore.HoaDonBan
         private System.Windows.Forms.TextBox txtTenQuanAo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtSoLuongBan;
+        private System.Windows.Forms.Button button1;
     }
 }

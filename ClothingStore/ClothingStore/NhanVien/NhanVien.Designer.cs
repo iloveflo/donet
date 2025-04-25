@@ -64,6 +64,7 @@
             this.btnReload = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -154,7 +155,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.Location = new System.Drawing.Point(359, 708);
+            this.button3.Location = new System.Drawing.Point(494, 708);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(151, 52);
             this.button3.TabIndex = 54;
@@ -411,12 +412,24 @@
             this.pictureBox2.TabIndex = 88;
             this.pictureBox2.TabStop = false;
             // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button6.Location = new System.Drawing.Point(274, 715);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(151, 38);
+            this.button6.TabIndex = 89;
+            this.button6.Text = "Xem Hóa đơn bán";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1201, 787);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btnReload);
@@ -500,5 +513,6 @@
         private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button6;
     }
 }
