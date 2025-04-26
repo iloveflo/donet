@@ -101,6 +101,7 @@ namespace ClothingStore
 
             }
         }
+
         private void btnDangKy_Click(object sender, EventArgs e)
         {
             Register registerForm = new Register();
