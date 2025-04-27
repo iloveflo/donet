@@ -3,32 +3,88 @@
   "WorkspaceRootPath": "D:\\ProjectC#\\ClothingStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\quenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\quenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\quenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\quenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\doimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\doimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\doimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\doimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\otp1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\otp1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\otp1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\otp1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\thongke\\thongke1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\thongke\\thongke1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\thongke\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\thongke\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\thongke\\doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\thongke\\doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\thongke\\doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\thongke\\doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\nhanvien\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\nhanvien\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\nhanvien\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\nhanvien\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\sanpham_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\sanpham_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\sanpham_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\sanpham_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\khachhang\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\khachhang\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\khachhang\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\khachhang\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\khachhang_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\khachhang_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\khachhang_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\khachhang_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\nhanvien_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\nhanvien_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\hoadonnhap\\hoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\hoadonnhap\\hoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\hoadonnhap\\hoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -39,60 +95,44 @@
       "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\hoadonban\\hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\sanpham_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\sanpham_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\quenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\quenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\otp1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\otp1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\nhanvien_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\nhanvien_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\khachhang_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\khachhang_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\doimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\doimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|d:\\projectc#\\clothingstore\\clothingstore\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|d:\\projectc#\\clothingstore\\clothingstore\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\doimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\doimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\hoadonban\\hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\hoadonban\\hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\thongke\\thongke1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\thongke\\thongke1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\nhanvien\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\nhanvien\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\thongke\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\thongke\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\thongke\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\thongke\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\class\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\class\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\sanpham_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\sanpham_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\hoadonban\\hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\hoadonban\\hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\nhanvien_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\nhanvien_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\adimin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -101,46 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\adimin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\adimin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\thongke\\doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\thongke\\doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\thongke\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\thongke\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\nhanvien_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\nhanvien_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\khachhang_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\khachhang_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\thongke\\thongke1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\thongke\\thongke1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\quenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\quenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\hoadonnhap\\hoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\hoadonnhap\\hoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\otp1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\otp1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\admin\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\admin\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|D:\\ProjectC#\\ClothingStore\\clothingstore\\khachhang\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75547F17-996D-4018-B837-F2813D28FDAB}|ClothingStore\\ClothingStore.csproj|solutionrelative:clothingstore\\khachhang\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -150,131 +150,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ThongKe.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\ThongKe\\ThongKe.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\ThongKe\\ThongKe.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "OTP1.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP1.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Admin\\OTP1.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP1.cs",
+              "RelativeToolTip": "ClothingStore\\Admin\\OTP1.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwCUAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T10:41:00.39Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ThongKe1.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe1.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\ThongKe\\ThongKe1.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe1.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\ThongKe\\ThongKe1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:51:35.302Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-21T12:38:54.996Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Main.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Main.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Main.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T12:34:51.077Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Register.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Register.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Register.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Register.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\Register.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T15:26:09.234Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DoanhThu.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\DoanhThu.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\ThongKe\\DoanhThu.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\DoanhThu.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\ThongKe\\DoanhThu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T10:47:15.798Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NhanVien.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\NhanVien\\NhanVien.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\NhanVien\\NhanVien.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\NhanVien\\NhanVien.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\NhanVien\\NhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T13:21:40.258Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "KhachHang.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\KhachHang\\KhachHang.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\KhachHang\\KhachHang.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\KhachHang\\KhachHang.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\KhachHang\\KhachHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T11:12:23.642Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HoaDonNhap.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonNhap\\HoaDonNhap.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\HoaDonNhap\\HoaDonNhap.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonNhap\\HoaDonNhap.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\HoaDonNhap\\HoaDonNhap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T10:32:40.267Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HoaDonBan.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonBan\\HoaDonBan.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\HoaDonBan\\HoaDonBan.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonBan\\HoaDonBan.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\HoaDonBan\\HoaDonBan.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T13:44:36.006Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SanPham_Admin.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\SanPham_Admin.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Admin\\SanPham_Admin.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\SanPham_Admin.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\Admin\\SanPham_Admin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T12:07:51.224Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "QuenMatKhau.cs [Design]",
               "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\QuenMatKhau.cs",
               "RelativeDocumentMoniker": "ClothingStore\\Admin\\QuenMatKhau.cs",
@@ -286,55 +179,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "OTP1.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP1.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Admin\\OTP1.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP1.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\Admin\\OTP1.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "QuenMatKhau.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\QuenMatKhau.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Admin\\QuenMatKhau.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\QuenMatKhau.cs",
+              "RelativeToolTip": "ClothingStore\\Admin\\QuenMatKhau.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAYwGUAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:31:57.498Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-21T14:44:23.861Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "OTP.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Admin\\OTP.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\Admin\\OTP.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:07:29.097Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "NhanVien_Admin.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\NhanVien_Admin.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Admin\\NhanVien_Admin.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\NhanVien_Admin.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\Admin\\NhanVien_Admin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T02:30:38.996Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Khachhang_admin.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\Khachhang_admin.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Admin\\Khachhang_admin.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\Khachhang_admin.cs [Design]",
-              "RelativeToolTip": "ClothingStore\\Admin\\Khachhang_admin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T13:42:33.521Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
               "Title": "DoiMatKhau.cs [Design]",
               "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\DoiMatKhau.cs",
               "RelativeDocumentMoniker": "ClothingStore\\Admin\\DoiMatKhau.cs",
@@ -346,46 +204,331 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Register.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Register.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Register.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Register.cs",
-              "RelativeToolTip": "ClothingStore\\Register.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwBAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T05:55:00.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Main.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Main.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Main.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Main.cs",
-              "RelativeToolTip": "ClothingStore\\Main.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAgwGcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T12:34:52.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 2,
               "Title": "DoiMatKhau.cs",
               "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\DoiMatKhau.cs",
               "RelativeDocumentMoniker": "ClothingStore\\Admin\\DoiMatKhau.cs",
               "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\DoiMatKhau.cs",
               "RelativeToolTip": "ClothingStore\\Admin\\DoiMatKhau.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwGsAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T02:51:12.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OTP1.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP1.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Admin\\OTP1.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP1.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\Admin\\OTP1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T12:31:57.498Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OTP.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Admin\\OTP.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP.cs",
+              "RelativeToolTip": "ClothingStore\\Admin\\OTP.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T07:31:02.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OTP.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Admin\\OTP.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\Admin\\OTP.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T07:07:29.097Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ThongKe1.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe1.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\ThongKe\\ThongKe1.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe1.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\ThongKe\\ThongKe1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:51:35.302Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DoanhThu.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\DoanhThu.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\ThongKe\\DoanhThu.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\DoanhThu.cs",
+              "RelativeToolTip": "ClothingStore\\ThongKe\\DoanhThu.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwA8AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:25:14.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DoanhThu.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\DoanhThu.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\ThongKe\\DoanhThu.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\DoanhThu.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\ThongKe\\DoanhThu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:47:15.798Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NhanVien.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\NhanVien\\NhanVien.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\NhanVien\\NhanVien.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\NhanVien\\NhanVien.cs",
+              "RelativeToolTip": "ClothingStore\\NhanVien\\NhanVien.cs",
+              "ViewState": "AgIAAPYBAAAAAAAAAAAiwAACAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:22:26.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "KhachHang.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\KhachHang\\KhachHang.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\KhachHang\\KhachHang.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\KhachHang\\KhachHang.cs",
+              "RelativeToolTip": "ClothingStore\\KhachHang\\KhachHang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T11:30:18.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NhanVien.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\NhanVien\\NhanVien.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\NhanVien\\NhanVien.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\NhanVien\\NhanVien.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\NhanVien\\NhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:21:40.258Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SanPham_Admin.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\SanPham_Admin.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Admin\\SanPham_Admin.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\SanPham_Admin.cs",
+              "RelativeToolTip": "ClothingStore\\Admin\\SanPham_Admin.cs",
+              "ViewState": "AgIAAJQBAAAAAAAAAAAnwJkBAADRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T15:50:47.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SanPham_Admin.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\SanPham_Admin.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Admin\\SanPham_Admin.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\SanPham_Admin.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\Admin\\SanPham_Admin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T12:07:51.224Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "KhachHang.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\KhachHang\\KhachHang.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\KhachHang\\KhachHang.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\KhachHang\\KhachHang.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\KhachHang\\KhachHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T11:12:23.642Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Khachhang_admin.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\Khachhang_admin.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Admin\\Khachhang_admin.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\Khachhang_admin.cs",
+              "RelativeToolTip": "ClothingStore\\Admin\\Khachhang_admin.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAowBAAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T13:42:35.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Khachhang_admin.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\Khachhang_admin.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Admin\\Khachhang_admin.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\Khachhang_admin.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\Admin\\Khachhang_admin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T13:42:33.521Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "NhanVien_Admin.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\NhanVien_Admin.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Admin\\NhanVien_Admin.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\NhanVien_Admin.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\Admin\\NhanVien_Admin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:30:38.996Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HoaDonNhap.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonNhap\\HoaDonNhap.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\HoaDonNhap\\HoaDonNhap.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonNhap\\HoaDonNhap.cs",
+              "RelativeToolTip": "ClothingStore\\HoaDonNhap\\HoaDonNhap.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAwwA8AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T04:31:25.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "HoaDonNhap.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonNhap\\HoaDonNhap.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\HoaDonNhap\\HoaDonNhap.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonNhap\\HoaDonNhap.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\HoaDonNhap\\HoaDonNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:32:40.267Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HoaDonBan.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonBan\\HoaDonBan.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\HoaDonBan\\HoaDonBan.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonBan\\HoaDonBan.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\HoaDonBan\\HoaDonBan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T13:44:36.006Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Main.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Main.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Main.cs",
+              "RelativeToolTip": "ClothingStore\\Main.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T12:34:52.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Main.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Main.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Main.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T12:34:51.077Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Register.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Register.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Register.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Register.cs",
+              "RelativeToolTip": "ClothingStore\\Register.cs",
+              "ViewState": "AgIAAMYAAAAAYWEpnF8wwAkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T05:55:00.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Register.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Register.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Register.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Register.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\Register.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T15:26:09.234Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ThongKe1.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe1.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\ThongKe\\ThongKe1.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe1.cs",
+              "RelativeToolTip": "ClothingStore\\ThongKe\\ThongKe1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:28:26.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ThongKe.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\ThongKe\\ThongKe.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe.cs",
+              "RelativeToolTip": "ClothingStore\\ThongKe\\ThongKe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:56:02.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ThongKe.cs [Design]",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\ThongKe\\ThongKe.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe.cs [Design]",
+              "RelativeToolTip": "ClothingStore\\ThongKe\\ThongKe.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:41:00.39Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "SessionManager.cs",
               "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Class\\SessionManager.cs",
               "RelativeDocumentMoniker": "ClothingStore\\Class\\SessionManager.cs",
@@ -393,50 +536,38 @@
               "RelativeToolTip": "ClothingStore\\Class\\SessionManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T04:29:44.1Z"
+              "WhenOpened": "2025-03-18T04:29:44.1Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
               "Title": "HoaDonBan.cs",
               "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonBan\\HoaDonBan.cs",
               "RelativeDocumentMoniker": "ClothingStore\\HoaDonBan\\HoaDonBan.cs",
               "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonBan\\HoaDonBan.cs",
               "RelativeToolTip": "ClothingStore\\HoaDonBan\\HoaDonBan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T13:44:52.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "NhanVien.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\NhanVien\\NhanVien.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\NhanVien\\NhanVien.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\NhanVien\\NhanVien.cs",
-              "RelativeToolTip": "ClothingStore\\NhanVien\\NhanVien.cs",
-              "ViewState": "AgIAAOABAAAAAAAAAAAYwPsBAAAJAAAAAAAAAA==",
+              "DocumentIndex": 32,
+              "Title": "NhanVien_Admin.cs",
+              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\NhanVien_Admin.cs",
+              "RelativeDocumentMoniker": "ClothingStore\\Admin\\NhanVien_Admin.cs",
+              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\NhanVien_Admin.cs",
+              "RelativeToolTip": "ClothingStore\\Admin\\NhanVien_Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T13:22:26.817Z",
+              "WhenOpened": "2025-03-19T13:16:01.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "SanPham_Admin.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\SanPham_Admin.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Admin\\SanPham_Admin.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\SanPham_Admin.cs",
-              "RelativeToolTip": "ClothingStore\\Admin\\SanPham_Admin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYBAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T15:50:47.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "Adimin.cs",
               "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\Adimin.cs",
               "RelativeDocumentMoniker": "ClothingStore\\Admin\\Adimin.cs",
@@ -444,148 +575,20 @@
               "RelativeToolTip": "ClothingStore\\Admin\\Adimin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T14:12:23.982Z"
+              "WhenOpened": "2025-03-16T14:12:23.982Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 34,
               "Title": "Adimin.cs [Design]",
               "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\Adimin.cs",
               "RelativeDocumentMoniker": "ClothingStore\\Admin\\Adimin.cs",
               "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\Adimin.cs [Design]",
               "RelativeToolTip": "ClothingStore\\Admin\\Adimin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T12:34:44.974Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "DoanhThu.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\DoanhThu.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\ThongKe\\DoanhThu.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\DoanhThu.cs",
-              "RelativeToolTip": "ClothingStore\\ThongKe\\DoanhThu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T11:25:14.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ThongKe.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\ThongKe\\ThongKe.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe.cs",
-              "RelativeToolTip": "ClothingStore\\ThongKe\\ThongKe.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:56:02.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "NhanVien_Admin.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\NhanVien_Admin.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Admin\\NhanVien_Admin.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\NhanVien_Admin.cs",
-              "RelativeToolTip": "ClothingStore\\Admin\\NhanVien_Admin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:16:01.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Khachhang_admin.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\Khachhang_admin.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Admin\\Khachhang_admin.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\Khachhang_admin.cs",
-              "RelativeToolTip": "ClothingStore\\Admin\\Khachhang_admin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T13:42:35.006Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ThongKe1.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe1.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\ThongKe\\ThongKe1.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\ThongKe\\ThongKe1.cs",
-              "RelativeToolTip": "ClothingStore\\ThongKe\\ThongKe1.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwDsAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T10:28:26.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "QuenMatKhau.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\QuenMatKhau.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Admin\\QuenMatKhau.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\QuenMatKhau.cs",
-              "RelativeToolTip": "ClothingStore\\Admin\\QuenMatKhau.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAA3wGUAAACCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T14:44:23.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "HoaDonNhap.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonNhap\\HoaDonNhap.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\HoaDonNhap\\HoaDonNhap.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\HoaDonNhap\\HoaDonNhap.cs",
-              "RelativeToolTip": "ClothingStore\\HoaDonNhap\\HoaDonNhap.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAowGcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T04:31:25.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "OTP1.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP1.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Admin\\OTP1.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP1.cs",
-              "RelativeToolTip": "ClothingStore\\Admin\\OTP1.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwEgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:38:54.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "OTP.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\Admin\\OTP.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\Admin\\OTP.cs",
-              "RelativeToolTip": "ClothingStore\\Admin\\OTP.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:31:02.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "KhachHang.cs",
-              "DocumentMoniker": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\KhachHang\\KhachHang.cs",
-              "RelativeDocumentMoniker": "ClothingStore\\KhachHang\\KhachHang.cs",
-              "ToolTip": "D:\\ProjectC#\\ClothingStore\\ClothingStore\\KhachHang\\KhachHang.cs",
-              "RelativeToolTip": "ClothingStore\\KhachHang\\KhachHang.cs",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAowIgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T11:30:18.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T12:34:44.974Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

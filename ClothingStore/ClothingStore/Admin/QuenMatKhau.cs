@@ -28,7 +28,7 @@ namespace ClothingStore.Admin
                 return;
             }
 
-            string connectionString = "server=localhost;database=ClothingStore;user=root;password=binh11a10;";
+            string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
             string email = "";
             string otp = GenerateOTP(); // Tạo mã OTP ngẫu nhiên
 
@@ -70,7 +70,7 @@ namespace ClothingStore.Admin
 
                     // Gửi OTP (bạn cần cài thư viện System.Net.Mail)
                     SendOtpToEmail(email, otp);
-                    MessageBox.Show("Mã xác thực OTP đã gửi về Email của tài khoản này");
+                    MessageBox.Show($"Mã xác thực OTP đã gửi về Email: {email}");
 
                     // Chuyển sang form OTP
                     OTP1 otpForm = new OTP1(otp, username);
@@ -99,7 +99,7 @@ namespace ClothingStore.Admin
                 mail.Body = $"Mã OTP của bạn là: {otpCode}";
 
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-                smtp.Credentials = new NetworkCredential("binha10k56@gmail.com", "Liên hệ Bình để lấy (cấm push mã này lên github)");
+                smtp.Credentials = new NetworkCredential("binha10k56@gmail.com", "");
                 smtp.EnableSsl = true;
                 smtp.Send(mail);
             }

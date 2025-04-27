@@ -17,7 +17,7 @@ namespace ClothingStore.Admin
     public partial class DoiMatKhau : Form
     {
         // Chuỗi kết nối tới MySQL
-        private string connectionString = "server=localhost;database=ClothingStore;user=root;password=binh11a10;";
+        private string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
 
         public DoiMatKhau()
         {
@@ -81,7 +81,7 @@ namespace ClothingStore.Admin
 
                     // Gửi OTP qua Email
                     SendOtpToEmail(email, otpCode);
-                    MessageBox.Show("Mã xác thực OTP đã gửi về Email của tài khoản này");
+                    MessageBox.Show($"Mã xác thực OTP đã gửi về Email: {email}");
 
                     // Mở form OTP và truyền dữ liệu
                     OTP otpForm = new OTP(otpCode, txtUserName.Text, txtNewPassword.Text);
@@ -105,7 +105,7 @@ namespace ClothingStore.Admin
                 mail.Body = $"Mã OTP của bạn là: {otpCode}";
 
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-                smtp.Credentials = new NetworkCredential("binha10k56@gmail.com", "Liên hệ Bình để lấy (cấm push mã này lên github)");
+                smtp.Credentials = new NetworkCredential("binha10k56@gmail.com", "");
                 smtp.EnableSsl = true;
                 smtp.Send(mail);
             }

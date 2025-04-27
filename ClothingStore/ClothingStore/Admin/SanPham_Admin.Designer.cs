@@ -66,6 +66,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnReload = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
@@ -86,6 +89,9 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.MistyRose;
+            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.btnReload);
             this.tabPage1.Controls.Add(this.txtAnh);
             this.tabPage1.Controls.Add(this.comboBoxDoiTuong);
             this.tabPage1.Controls.Add(this.label16);
@@ -132,7 +138,7 @@
             // txtAnh
             // 
             this.txtAnh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtAnh.Location = new System.Drawing.Point(1048, 336);
+            this.txtAnh.Location = new System.Drawing.Point(1060, 285);
             this.txtAnh.Name = "txtAnh";
             this.txtAnh.Size = new System.Drawing.Size(154, 30);
             this.txtAnh.TabIndex = 51;
@@ -222,7 +228,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label15.ForeColor = System.Drawing.Color.Blue;
-            this.label15.Location = new System.Drawing.Point(951, 342);
+            this.label15.Location = new System.Drawing.Point(1012, 291);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(42, 22);
             this.label15.TabIndex = 40;
@@ -340,7 +346,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(1220, 670);
+            this.button2.Location = new System.Drawing.Point(884, 670);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 50);
             this.button2.TabIndex = 21;
@@ -351,7 +357,7 @@
             // btn_them_NV
             // 
             this.btn_them_NV.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_them_NV.Location = new System.Drawing.Point(644, 670);
+            this.btn_them_NV.Location = new System.Drawing.Point(452, 670);
             this.btn_them_NV.Name = "btn_them_NV";
             this.btn_them_NV.Size = new System.Drawing.Size(150, 50);
             this.btn_them_NV.TabIndex = 20;
@@ -391,14 +397,14 @@
             // 
             // txtTenQuanAo
             // 
-            this.txtTenQuanAo.Location = new System.Drawing.Point(793, 91);
+            this.txtTenQuanAo.Location = new System.Drawing.Point(552, 91);
             this.txtTenQuanAo.Name = "txtTenQuanAo";
             this.txtTenQuanAo.Size = new System.Drawing.Size(216, 45);
             this.txtTenQuanAo.TabIndex = 12;
             // 
             // txtMaQuanAo
             // 
-            this.txtMaQuanAo.Location = new System.Drawing.Point(361, 91);
+            this.txtMaQuanAo.Location = new System.Drawing.Point(131, 91);
             this.txtMaQuanAo.Name = "txtMaQuanAo";
             this.txtMaQuanAo.Size = new System.Drawing.Size(216, 45);
             this.txtMaQuanAo.TabIndex = 9;
@@ -429,7 +435,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(231, 108);
+            this.label4.Location = new System.Drawing.Point(10, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 22);
             this.label4.TabIndex = 5;
@@ -462,7 +468,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Location = new System.Drawing.Point(664, 108);
+            this.label5.Location = new System.Drawing.Point(426, 108);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 22);
             this.label5.TabIndex = 2;
@@ -483,9 +489,42 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1220, 732);
+            this.tabPage2.Size = new System.Drawing.Size(1463, 732);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnReload
+            // 
+            this.btnReload.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnReload.Location = new System.Drawing.Point(1261, 670);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(150, 50);
+            this.btnReload.TabIndex = 52;
+            this.btnReload.Text = "Reload";
+            this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button3.Location = new System.Drawing.Point(1060, 326);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(116, 38);
+            this.button3.TabIndex = 53;
+            this.button3.Text = "Mở ảnh";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button4.Location = new System.Drawing.Point(846, 91);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(116, 38);
+            this.button4.TabIndex = 54;
+            this.button4.Text = "Tìm Kiếm";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // SanPham_Admin
             // 
@@ -545,5 +584,8 @@
         public System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox comboBoxDoiTuong;
         private System.Windows.Forms.TextBox txtAnh;
+        private System.Windows.Forms.Button btnReload;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

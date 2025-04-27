@@ -15,7 +15,7 @@ namespace ClothingStore.NhanVien
 {
     public partial class NhanVien : Form
     {
-        private string connectionString = "server=localhost;database=ClothingStore;user=root;password=binh11a10;";
+        private string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
         private MySqlConnection conn;
         private int maNhanVien = Convert.ToInt32(SessionManager.MaTaiKhoanDangNhap);
         public NhanVien()
@@ -363,9 +363,25 @@ namespace ClothingStore.NhanVien
         {
             LoadDataGridView();
             label4.Text = "Danh sách sản phẩm";
+            txtMaQuanAo.Clear();
+            txtTenQuanAo.Clear();
+            txtDonGiaBan.Clear();
+            cboChatLieu.Text = null;
+            cboCo.Text = null;
+            cboDoiTuong.Text = null;
+            cboLoai.Text = null;
+            cboMau.Text = null;
+            cboMua.Text = null;
+            cboNoiSanXuat.Text = null;
         }
         private void btnLapHoaDonBan_Click(object sender, EventArgs e)
         {
+            if(label4.Text == "Danh sách sản phẩm")
+            {
+                MessageBox.Show("hãy vào xem danh sách đặt hàng");
+                return;
+            }
+
             // Kiểm tra xem DataGridView có đang hiển thị bảng GioHang không
             if (dataGridView1.DataSource == null || dataGridView1.Rows.Count == 0)
             {

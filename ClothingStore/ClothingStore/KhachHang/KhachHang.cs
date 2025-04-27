@@ -15,7 +15,7 @@ namespace ClothingStore.KhachHang
 {
     public partial class KhachHang : Form
     {
-        private string connectionString = "server=localhost;database=ClothingStore;user=root;password=binh11a10;";
+        private string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
         private MySqlConnection conn;
 
         public KhachHang()
@@ -395,6 +395,11 @@ namespace ClothingStore.KhachHang
                 MessageBox.Show("Số lượng đặt phải lớn hơn 0!");
                 return;
             }
+            if(label4.Text == "Giỏ hàng của bạn")
+            {
+                MessageBox.Show("Không thể thực hiện !!!!!");
+                return;
+            }
 
             try
             {
@@ -487,43 +492,50 @@ namespace ClothingStore.KhachHang
         }
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedCells.Count > 0)
+            if(label4.Text == "Giỏ hàng của bạn")
             {
-                // Lấy mã sản phẩm từ ô được chọn
-                string maQuanAo = dataGridView1.SelectedCells[0].OwningRow.Cells["MaQuanAo"].Value.ToString();
-
-                try
+                if (dataGridView1.SelectedCells.Count > 0)
                 {
-                    conn.Open();
-                    string query = "DELETE FROM GioHang WHERE MaKhachHang = @MaKhachHang AND MaQuanAo = @MaQuanAo";
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@MaKhachHang", SessionManager.MaTaiKhoanDangNhap);
-                    cmd.Parameters.AddWithValue("@MaQuanAo", maQuanAo);
+                    // Lấy mã sản phẩm từ ô được chọn
+                    string maQuanAo = dataGridView1.SelectedCells[0].OwningRow.Cells["MaQuanAo"].Value.ToString();
 
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    if (rowsAffected > 0)
+                    try
                     {
-                        MessageBox.Show("Xóa sản phẩm khỏi giỏ hàng thành công!");
-                        conn.Close() ;
-                        btnXemGioHang.PerformClick(); // Reload giỏ hàng
+                        conn.Open();
+                        string query = "DELETE FROM GioHang WHERE MaKhachHang = @MaKhachHang AND MaQuanAo = @MaQuanAo";
+                        MySqlCommand cmd = new MySqlCommand(query, conn);
+                        cmd.Parameters.AddWithValue("@MaKhachHang", SessionManager.MaTaiKhoanDangNhap);
+                        cmd.Parameters.AddWithValue("@MaQuanAo", maQuanAo);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Xóa sản phẩm khỏi giỏ hàng thành công!");
+                            conn.Close();
+                            btnXemGioHang.PerformClick(); // Reload giỏ hàng
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy sản phẩm trong giỏ hàng để xóa.");
+                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("Không tìm thấy sản phẩm trong giỏ hàng để xóa.");
+                        MessageBox.Show("Lỗi xóa sản phẩm: " + ex.Message);
+                    }
+                    finally
+                    {
+                        conn.Close();
                     }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("Lỗi xóa sản phẩm: " + ex.Message);
-                }
-                finally
-                {
-                    conn.Close();
+                    MessageBox.Show("Vui lòng chọn sản phẩm để xóa.");
                 }
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn sản phẩm để xóa.");
+                MessageBox.Show("Không thể thực hiện!!!");
             }
         }
         private void BtnDatHang_Click(object sender, EventArgs e)
@@ -539,6 +551,16 @@ namespace ClothingStore.KhachHang
         {
             LoadDataGridView();
             label4.Text = "Danh sách sản phẩm";
+            cboChatLieu.Text = null;
+            cboCo.Text = null;
+            cboDoiTuong.Text = null;
+            cboLoai.Text = null;
+            cboMau.Text = null;
+            cboMua.Text = null;
+            cboNoiSanXuat.Text = null;
+            txtMaQuanAo.Clear();
+            txtTenQuanAo.Clear();
+            txtDonGiaBan.Clear();
         }
     }
 }

@@ -35,7 +35,7 @@ namespace ClothingStore.Admin
             }
 
             // Nếu đúng OTP → đặt lại mật khẩu
-            string connectionString = "server=localhost;database=ClothingStore;user=root;password=binh11a10;";
+            string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try

@@ -13,7 +13,7 @@ namespace ClothingStore.HoaDonNhap
 {
     public partial class HoaDonNhap : Form
     {
-        private string connectionString = "server=localhost;database=ClothingStore;user=root;password=binh11a10;";
+        private string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
         private MySqlConnection connection;
 
         public HoaDonNhap()

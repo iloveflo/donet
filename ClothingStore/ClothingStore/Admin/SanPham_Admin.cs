@@ -80,7 +80,7 @@ namespace ClothingStore.Admin
             comboBoxNoiSanXuat.SelectedIndex = 0;
         }
         // Chuỗi kết nối cho MySQL
-        private string connectionString = "server=localhost;database=ClothingStore;uid=root;pwd=binh11a10;";
+        private string connectionString = "server=192.168.0.101;database=ClothingStore;uid=root;pwd=binh11a10;";
 
         // Load dữ liệu vào DataGridView
         private void LoadDataGridView()
@@ -115,7 +115,17 @@ namespace ClothingStore.Admin
         // Nút thêm
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (txtTenQuanAo.Text == "" || txtDonGiaNhap.Text == "" || txtDonGiaBan.Text == "" || txtSoLuong.Text == "")
+            if (txtTenQuanAo.Text == "" || 
+                txtDonGiaNhap.Text == "" || 
+                txtDonGiaBan.Text == "" || 
+                txtSoLuong.Text == ""||
+                comboBoxChatLieu.Text==null||
+                comboBoxCo.Text==null||
+                comboBoxDoiTuong.Text==null||
+                comboBoxLoai.Text==null||
+                comboBoxMau.Text==null||
+                comboBoxMua.Text==null||
+                comboBoxNoiSanXuat.Text==null)
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -137,10 +147,11 @@ namespace ClothingStore.Admin
                     int maNSX = GetIdFromName("NoiSanXuat", "MaNSX", "TenNSX", comboBoxNoiSanXuat.SelectedItem.ToString(), conn);
 
                     // Thêm sản phẩm vào bảng SanPham
-                    string insertQuery = @"INSERT INTO SanPham (TenQuanAo, MaLoai, MaCo, MaChatLieu, MaMau, MaDoiTuong, MaMua, MaNSX, SoLuong, Anh, DonGiaNhap, DonGiaBan) 
-                                   VALUES (@TenQuanAo, @MaLoai, @MaCo, @MaChatLieu, @MaMau, @MaDoiTuong, @MaMua, @MaNSX, @SoLuong, @Anh, @DonGiaNhap, @DonGiaBan)";
+                    string insertQuery = @"INSERT INTO SanPham (MaQuanAo,TenQuanAo, MaLoai, MaCo, MaChatLieu, MaMau, MaDoiTuong, MaMua, MaNSX, SoLuong, Anh, DonGiaNhap, DonGiaBan) 
+                                   VALUES (@MaQuanAo,@TenQuanAo, @MaLoai, @MaCo, @MaChatLieu, @MaMau, @MaDoiTuong, @MaMua, @MaNSX, @SoLuong, @Anh, @DonGiaNhap, @DonGiaBan)";
 
                     MySqlCommand cmdInsert = new MySqlCommand(insertQuery, conn);
+                    cmdInsert.Parameters.AddWithValue("@MaQuanAo", txtMaQuanAo.Text);
                     cmdInsert.Parameters.AddWithValue("@TenQuanAo", txtTenQuanAo.Text);
                     cmdInsert.Parameters.AddWithValue("@MaLoai", maLoai);
                     cmdInsert.Parameters.AddWithValue("@MaCo", maCo);
@@ -356,6 +367,118 @@ namespace ClothingStore.Admin
                 else
                 {
                     picAnh.Image = null; // Xóa ảnh nếu không có đường dẫn
+                }
+            }
+        }
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image files (*.jpg;*.jpeg;*.png)|*.jpg;*.jpeg;*.png";
+
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                txtAnh.Text = open.FileName;
+                picAnh.ImageLocation = open.FileName;
+                picAnh.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+        }
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            LoadDataGridView();
+            comboBoxLoai.Text = null;
+            comboBoxCo.Text = null;
+            comboBoxChatLieu.Text = null;
+            comboBoxMua.Text = null;
+            comboBoxMau.Text = null;
+            comboBoxDoiTuong.Text = null;
+            comboBoxNoiSanXuat.Text = null;
+            txtMaQuanAo.Clear();
+            txtTenQuanAo.Clear ();
+            txtSoLuong.Clear();
+            txtDonGiaNhap.Clear();
+            txtAnh.Clear();
+            txtDonGiaBan.Clear();
+            picAnh.Image=null;
+        }
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT s.MaQuanAo, s.TenQuanAo, t.TenLoai, c.TenCo, m.TenMau, mu.TenMua, dt.TenDoiTuong, cl.TenChatLieu, ns.TenNSX, s.Anh, s.DonGiaBan, s.SoLuong, s.DonGiaNhap, s.DonGiaBan " +
+                                   "FROM SanPham s " +
+                                   "JOIN TheLoai t ON s.MaLoai = t.MaLoai " +
+                                   "JOIN Co c ON s.MaCo = c.MaCo " +
+                                   "JOIN Mau m ON s.MaMau = m.MaMau " +
+                                   "JOIN Mua mu ON s.MaMua = mu.MaMua " +
+                                   "JOIN DoiTuong dt ON s.MaDoiTuong = dt.MaDoiTuong " +
+                                   "JOIN ChatLieu cl ON s.MaChatLieu = cl.MaChatLieu " +
+                                   "JOIN NoiSanXuat ns ON s.MaNSX = ns.MaNSX WHERE 1=1 ";
+
+                    if (!string.IsNullOrEmpty(txtMaQuanAo.Text))
+                        query += " AND s.MaQuanAo = @MaQuanAo";
+
+                    if (comboBoxLoai.SelectedItem != null)
+                        query += " AND t.TenLoai = @TenLoai";
+
+                    if (comboBoxCo.SelectedItem != null)
+                        query += " AND c.TenCo = @TenCo";
+
+                    if (comboBoxMau.SelectedItem != null)
+                        query += " AND m.TenMau = @TenMau";
+
+                    if (comboBoxMua.SelectedItem != null)
+                        query += " AND mu.TenMua = @TenMua";
+
+                    if (comboBoxDoiTuong.SelectedItem != null)
+                        query += " AND dt.TenDoiTuong = @TenDoiTuong";
+
+                    if (comboBoxChatLieu.SelectedItem != null)
+                        query += " AND cl.TenChatLieu = @TenChatLieu";
+
+                    if (comboBoxNoiSanXuat.SelectedItem != null)
+                        query += " AND ns.TenNSX = @TenNSX";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    if (!string.IsNullOrEmpty(txtMaQuanAo.Text))
+                        cmd.Parameters.AddWithValue("@MaQuanAo", txtMaQuanAo.Text);
+
+                    if (comboBoxLoai.SelectedItem != null)
+                        cmd.Parameters.AddWithValue("@TenLoai", comboBoxLoai.SelectedItem.ToString());
+
+                    if (comboBoxCo.SelectedItem != null)
+                        cmd.Parameters.AddWithValue("@TenCo", comboBoxCo.SelectedItem.ToString());
+
+                    if (comboBoxMau.SelectedItem != null)
+                        cmd.Parameters.AddWithValue("@TenMau", comboBoxMau.SelectedItem.ToString());
+
+                    if (comboBoxMua.SelectedItem != null)
+                        cmd.Parameters.AddWithValue("@TenMua", comboBoxMua.SelectedItem.ToString());
+
+                    if (comboBoxDoiTuong.SelectedItem != null)
+                        cmd.Parameters.AddWithValue("@TenDoiTuong", comboBoxDoiTuong.SelectedItem.ToString());
+
+                    if (comboBoxChatLieu.SelectedItem != null)
+                        cmd.Parameters.AddWithValue("@TenChatLieu", comboBoxChatLieu.SelectedItem.ToString());
+
+                    if (comboBoxNoiSanXuat.SelectedItem != null)
+                        cmd.Parameters.AddWithValue("@TenNSX", comboBoxNoiSanXuat.SelectedItem.ToString());
+
+                    var adapter = new MySqlDataAdapter(cmd);
+                    var dt = new DataTable();
+                    adapter.Fill(dt);
+                    dataGridViewSanPham.DataSource = dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi tìm kiếm: " + ex.Message);
+                }
+                finally
+                {
+                    conn.Close();
                 }
             }
         }
