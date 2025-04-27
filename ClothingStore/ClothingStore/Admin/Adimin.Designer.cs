@@ -179,6 +179,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Adimin";
             this.Text = "Bạn Đang là Admin";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

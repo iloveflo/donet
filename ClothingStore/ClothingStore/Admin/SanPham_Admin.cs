@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using ClothingStore.Class;
 
 namespace ClothingStore.Admin
 {
@@ -321,6 +322,30 @@ namespace ClothingStore.Admin
             Adimin formAdmin = new Adimin(); // Tạo mới form Admin
             formAdmin.Show(); // Hiển thị lại form Admin
         }
+
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "UPDATE taikhoan SET DangNhap = 0 WHERE MaTaiKhoan = @MaTaiKhoan";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaTaiKhoan", SessionManager.MaTaiKhoanDangNhap);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi đăng xuất: " + ex.Message);
+            }
+            finally
+            {
+                SessionManager.ClearSession();
+            }
+        }
+
 
         // Hiển thị dữ liệu lên textbox, combobox khi chọn dòng trong DataGridView
         private void dataGridViewSanPham_CellClick(object sender, DataGridViewCellEventArgs e)

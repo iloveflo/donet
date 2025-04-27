@@ -39,7 +39,7 @@ namespace ClothingStore
                 try
                 {
                     conn.Open();
-                    string query = "SELECT MaTaiKhoan, LoaiTaiKhoan FROM TaiKhoan WHERE TenDangNhap = @username AND MatKhau = @password";
+                    string query = "SELECT MaTaiKhoan, LoaiTaiKhoan, DangNhap FROM TaiKhoan WHERE TenDangNhap = @username AND MatKhau = @password";
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@username", username);
@@ -51,7 +51,14 @@ namespace ClothingStore
                             {
                                 string maTaiKhoan = reader["MaTaiKhoan"].ToString();  // ✅ Lấy đúng MaTaiKhoan
                                 string loaiTaiKhoan = reader["LoaiTaiKhoan"].ToString();
+                                bool dangNhap = Convert.ToBoolean(reader["DangNhap"]);
 
+                                if (dangNhap)
+                                {
+                                    // Tài khoản đang đăng nhập ở nơi khác
+                                    MessageBox.Show("Tài khoản đang đăng nhập ở thiết bị khác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    return;
+                                }
                                 // Lưu vào SessionManager
                                 SessionManager.SetSession(maTaiKhoan, loaiTaiKhoan);
 
@@ -62,17 +69,38 @@ namespace ClothingStore
                                 switch (loaiTaiKhoan)
                                 {
                                     case "Admin":
+                                        reader.Close();
+                                        string updateQuery = "UPDATE TaiKhoan SET DangNhap = 1 WHERE MaTaiKhoan = @MaTaiKhoan";
+                                        using (MySqlCommand updateCmd = new MySqlCommand(updateQuery, conn))
+                                        {
+                                            updateCmd.Parameters.AddWithValue("@MaTaiKhoan", SessionManager.MaTaiKhoanDangNhap);
+                                            updateCmd.ExecuteNonQuery();
+                                        }
                                         Admin.Adimin adminForm = new Admin.Adimin();
                                         adminForm.Show();
                                         this.Hide();
                                         break;
 
                                     case "KhachHang":
+                                        reader.Close();
+                                        string updateQuery1 = "UPDATE TaiKhoan SET DangNhap = 1 WHERE MaTaiKhoan = @MaTaiKhoan";
+                                        using (MySqlCommand updateCmd = new MySqlCommand(updateQuery1, conn))
+                                        {
+                                            updateCmd.Parameters.AddWithValue("@MaTaiKhoan", SessionManager.MaTaiKhoanDangNhap);
+                                            updateCmd.ExecuteNonQuery();
+                                        }
                                         KhachHang.KhachHang khachForm = new KhachHang.KhachHang();
                                         khachForm.Show();
                                         this.Hide();
                                         break;
                                     case "NhanVien":
+                                        reader.Close();
+                                        string updateQuery2 = "UPDATE TaiKhoan SET DangNhap = 1 WHERE MaTaiKhoan = @MaTaiKhoan";
+                                        using (MySqlCommand updateCmd = new MySqlCommand(updateQuery2, conn))
+                                        {
+                                            updateCmd.Parameters.AddWithValue("@MaTaiKhoan", SessionManager.MaTaiKhoanDangNhap);
+                                            updateCmd.ExecuteNonQuery();
+                                        }
                                         NhanVien.NhanVien nhanVien= new NhanVien.NhanVien();
                                         nhanVien.Show();
                                         this.Hide();

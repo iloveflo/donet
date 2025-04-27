@@ -439,7 +439,7 @@
             this.label17.ForeColor = System.Drawing.Color.Red;
             this.label17.Location = new System.Drawing.Point(285, 394);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(501, 39);
+            this.label17.Size = new System.Drawing.Size(483, 38);
             this.label17.TabIndex = 61;
             this.label17.Text = "GIẢM GIÁ CỰC SỐC TỪ 1-50%";
             // 
@@ -489,6 +489,7 @@
             this.Controls.Add(this.label1);
             this.Name = "KhachHang";
             this.Text = "KhachHang";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

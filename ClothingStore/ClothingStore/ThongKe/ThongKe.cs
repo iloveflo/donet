@@ -101,6 +101,30 @@ namespace ClothingStore.ThongKe
                 nhanVien.Show();
             }
         }
+
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "UPDATE taikhoan SET DangNhap = 0 WHERE MaTaiKhoan = @MaTaiKhoan";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaTaiKhoan", SessionManager.MaTaiKhoanDangNhap);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi đăng xuất: " + ex.Message);
+            }
+            finally
+            {
+                SessionManager.ClearSession();
+            }
+        }
+
         // Sự kiện click nút "Hóa đơn nhập"
         private void btnHoaDonNhap_Click(object sender, EventArgs e)
         {

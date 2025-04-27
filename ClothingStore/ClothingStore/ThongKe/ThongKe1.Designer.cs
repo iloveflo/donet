@@ -209,6 +209,7 @@
             this.Controls.Add(this.panel10);
             this.Name = "ThongKe1";
             this.Text = "ThongKe1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).EndInit();

@@ -235,6 +235,7 @@ namespace ClothingStore.HoaDonBan
             this.Controls.Add(this.label37);
             this.Name = "HoaDonBan";
             this.Text = "Hóa Đơn Bán";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

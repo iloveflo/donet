@@ -468,6 +468,7 @@
             this.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.Name = "NhanVien";
             this.Text = "NhanVien";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

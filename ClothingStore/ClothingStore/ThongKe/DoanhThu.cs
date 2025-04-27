@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClothingStore.Class;
 using MySql.Data.MySqlClient;
 
 namespace ClothingStore.ThongKe
@@ -84,6 +85,28 @@ namespace ClothingStore.ThongKe
             this.Hide();
             Admin.Adimin adminForm = new Admin.Adimin();
             adminForm.Show();
+        }
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "UPDATE taikhoan SET DangNhap = 0 WHERE MaTaiKhoan = @MaTaiKhoan";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaTaiKhoan", SessionManager.MaTaiKhoanDangNhap);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi đăng xuất: " + ex.Message);
+            }
+            finally
+            {
+                SessionManager.ClearSession();
+            }
         }
     }
 }

@@ -283,6 +283,7 @@
             this.Controls.Add(this.label37);
             this.Name = "HoaDonNhap";
             this.Text = "HoaDonNhap";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHoaDonNhap)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

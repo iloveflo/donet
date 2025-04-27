@@ -30,6 +30,9 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnReload = new System.Windows.Forms.Button();
             this.txtAnh = new System.Windows.Forms.TextBox();
             this.comboBoxDoiTuong = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -66,9 +69,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnReload = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
@@ -134,6 +134,39 @@
             this.tabPage1.Size = new System.Drawing.Size(1463, 732);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Sản Phẩm";
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button4.Location = new System.Drawing.Point(846, 91);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(116, 38);
+            this.button4.TabIndex = 54;
+            this.button4.Text = "Tìm Kiếm";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button3.Location = new System.Drawing.Point(1060, 326);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(116, 38);
+            this.button3.TabIndex = 53;
+            this.button3.Text = "Mở ảnh";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // btnReload
+            // 
+            this.btnReload.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnReload.Location = new System.Drawing.Point(1261, 670);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(150, 50);
+            this.btnReload.TabIndex = 52;
+            this.btnReload.Text = "Reload";
+            this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // txtAnh
             // 
@@ -493,39 +526,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // btnReload
-            // 
-            this.btnReload.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnReload.Location = new System.Drawing.Point(1261, 670);
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(150, 50);
-            this.btnReload.TabIndex = 52;
-            this.btnReload.Text = "Reload";
-            this.btnReload.UseVisualStyleBackColor = true;
-            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.Location = new System.Drawing.Point(1060, 326);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(116, 38);
-            this.button3.TabIndex = 53;
-            this.button3.Text = "Mở ảnh";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.btnOpen_Click);
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.Location = new System.Drawing.Point(846, 91);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(116, 38);
-            this.button4.TabIndex = 54;
-            this.button4.Text = "Tìm Kiếm";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
             // SanPham_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -534,6 +534,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "SanPham_Admin";
             this.Text = "SanPham_Admin";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.Load += new System.EventHandler(this.SanPham_Admin_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

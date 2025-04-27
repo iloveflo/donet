@@ -245,6 +245,18 @@ namespace ClothingStore.NhanVien
         }
         private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string updateQuery = "UPDATE taikhoan SET DangNhap = 0 WHERE MaTaiKhoan = @MaTaiKhoan";
+                MySqlCommand cmd = new MySqlCommand(updateQuery, conn);
+                cmd.Parameters.AddWithValue("@MaTaiKhoan", SessionManager.MaTaiKhoanDangNhap);
+                cmd.ExecuteNonQuery();
+            }
+
+            // Sau khi update thành công, clear session
+            SessionManager.ClearSession();
+
             DoiMatKhau doimatkhauForm = new DoiMatKhau();
             doimatkhauForm.Show();
             this.Hide();
@@ -255,6 +267,8 @@ namespace ClothingStore.NhanVien
             mainForm.Show();
             this.Close();
         }
+
+
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             try
@@ -509,6 +523,30 @@ namespace ClothingStore.NhanVien
                 dataGridView1.DataSource = dt;
             }
         }
+
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "UPDATE taikhoan SET DangNhap = 0 WHERE MaTaiKhoan = @MaTaiKhoan";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaTaiKhoan", SessionManager.MaTaiKhoanDangNhap);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi đăng xuất: " + ex.Message);
+            }
+            finally
+            {
+                SessionManager.ClearSession();
+            }
+        }
+
 
         private void button5_Click(object sender, EventArgs e)
         {
