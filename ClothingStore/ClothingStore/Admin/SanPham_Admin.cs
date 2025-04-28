@@ -22,64 +22,53 @@ namespace ClothingStore.Admin
         }
         private void SanPham_Admin_Load(object sender, EventArgs e)
         {
-            // Thêm giá trị vào ComboBox Loại
-            comboBoxLoai.Items.Add("Áo");
-            comboBoxLoai.Items.Add("Quần");
-            comboBoxLoai.Items.Add("Váy");
-            comboBoxLoai.Items.Add("Giày");
-            comboBoxLoai.Items.Add("Phụ kiện");
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
 
-            // Thêm giá trị vào ComboBox Cỡ
-            comboBoxCo.Items.Add("S");
-            comboBoxCo.Items.Add("M");
-            comboBoxCo.Items.Add("L");
-            comboBoxCo.Items.Add("XL");
-            comboBoxCo.Items.Add("XXL");
+                    LoadComboBox(comboBoxLoai, "TheLoai", "TenLoai", conn);
+                    LoadComboBox(comboBoxCo, "Co", "TenCo", conn);
+                    LoadComboBox(comboBoxChatLieu, "ChatLieu", "TenChatLieu", conn);
+                    LoadComboBox(comboBoxMau, "Mau", "TenMau", conn);
+                    LoadComboBox(comboBoxDoiTuong, "DoiTuong", "TenDoiTuong", conn);
+                    LoadComboBox(comboBoxMua, "Mua", "TenMua", conn);
+                    LoadComboBox(comboBoxNoiSanXuat, "NoiSanXuat", "TenNSX", conn);
 
-            // Thêm giá trị vào ComboBox Chất liệu
-            comboBoxChatLieu.Items.Add("Cotton");
-            comboBoxChatLieu.Items.Add("Jeans");
-            comboBoxChatLieu.Items.Add("Polyester");
-            comboBoxChatLieu.Items.Add("Lụa");
-            comboBoxChatLieu.Items.Add("Len");
-
-            // Thêm giá trị vào ComboBox Màu
-            comboBoxMau.Items.Add("Đỏ");
-            comboBoxMau.Items.Add("Xanh");
-            comboBoxMau.Items.Add("Vàng");
-            comboBoxMau.Items.Add("Trắng");
-            comboBoxMau.Items.Add("Đen");
-
-            // Thêm giá trị vào ComboBox Đối tượng
-            comboBoxDoiTuong.Items.Add("Nam");
-            comboBoxDoiTuong.Items.Add("Nữ");
-            comboBoxDoiTuong.Items.Add("Trẻ em");
-            comboBoxDoiTuong.Items.Add("Unisex");
-            comboBoxDoiTuong.Items.Add("Người già");
-
-            // Thêm giá trị vào ComboBox Mùa
-            comboBoxMua.Items.Add("Xuân");
-            comboBoxMua.Items.Add("Hạ");
-            comboBoxMua.Items.Add("Thu");
-            comboBoxMua.Items.Add("Đông");
-            comboBoxMua.Items.Add("Quanh năm");
-
-            // Thêm giá trị vào ComboBox Nơi sản xuất
-            comboBoxNoiSanXuat.Items.Add("Việt Nam");
-            comboBoxNoiSanXuat.Items.Add("Trung Quốc");
-            comboBoxNoiSanXuat.Items.Add("Hàn Quốc");
-            comboBoxNoiSanXuat.Items.Add("Nhật Bản");
-            comboBoxNoiSanXuat.Items.Add("Mỹ");
-
-            // Đặt giá trị mặc định cho các ComboBox (tuỳ chọn)
-            comboBoxLoai.SelectedIndex = 0;
-            comboBoxCo.SelectedIndex = 0;
-            comboBoxChatLieu.SelectedIndex = 0;
-            comboBoxMau.SelectedIndex = 0;
-            comboBoxDoiTuong.SelectedIndex = 0;
-            comboBoxMua.SelectedIndex = 0;
-            comboBoxNoiSanXuat.SelectedIndex = 0;
+                    // Đặt giá trị mặc định nếu cần
+                    if (comboBoxLoai.Items.Count > 0) comboBoxLoai.SelectedIndex = 0;
+                    if (comboBoxCo.Items.Count > 0) comboBoxCo.SelectedIndex = 0;
+                    if (comboBoxChatLieu.Items.Count > 0) comboBoxChatLieu.SelectedIndex = 0;
+                    if (comboBoxMau.Items.Count > 0) comboBoxMau.SelectedIndex = 0;
+                    if (comboBoxDoiTuong.Items.Count > 0) comboBoxDoiTuong.SelectedIndex = 0;
+                    if (comboBoxMua.Items.Count > 0) comboBoxMua.SelectedIndex = 0;
+                    if (comboBoxNoiSanXuat.Items.Count > 0) comboBoxNoiSanXuat.SelectedIndex = 0;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi load ComboBox: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
+
+        // Hàm load chung cho tất cả các ComboBox
+        private void LoadComboBox(ComboBox comboBox, string tableName, string columnName, MySqlConnection conn)
+        {
+            string query = $"SELECT {columnName} FROM {tableName}";
+            using (MySqlCommand cmd = new MySqlCommand(query, conn))
+            {
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    comboBox.Items.Clear(); // Xóa cũ trước khi load mới
+                    while (reader.Read())
+                    {
+                        comboBox.Items.Add(reader[columnName].ToString());
+                    }
+                }
+            }
+        }
+
         // Chuỗi kết nối cho MySQL
         private string connectionString = DatabaseHelper.ConnectionString;
 
@@ -116,7 +105,8 @@ namespace ClothingStore.Admin
         // Nút thêm
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (txtTenQuanAo.Text == "" || 
+            if (txtMaQuanAo.Text==""||
+                txtTenQuanAo.Text == "" || 
                 txtDonGiaNhap.Text == "" || 
                 txtDonGiaBan.Text == "" || 
                 txtSoLuong.Text == ""||
@@ -137,6 +127,17 @@ namespace ClothingStore.Admin
                 try
                 {
                     conn.Open();
+
+                    string checkQuery = "SELECT COUNT(*) FROM SanPham WHERE MaQuanAo = @MaQuanAo";
+                    MySqlCommand cmdCheck = new MySqlCommand(checkQuery, conn);
+                    cmdCheck.Parameters.AddWithValue("@MaQuanAo", txtMaQuanAo.Text);
+                    int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
+
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Mã quần áo đã tồn tại! Vui lòng nhập mã khác.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return; // Không cho thêm
+                    }
 
                     // Lấy mã từ tên trong ComboBox
                     int maLoai = GetIdFromName("TheLoai", "MaLoai", "TenLoai", comboBoxLoai.SelectedItem.ToString(), conn);
@@ -183,6 +184,8 @@ namespace ClothingStore.Admin
                 }
             }
         }
+
+
         private int GetIdFromName(string tableName, string idColumn, string nameColumn, string name, MySqlConnection conn)
         {
             string query = $"SELECT {idColumn} FROM {tableName} WHERE {nameColumn} = @name";

@@ -48,6 +48,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -65,6 +67,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.MistyRose;
+            this.tabPage1.Controls.Add(this.button7);
+            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.txtEmail);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.button2);
@@ -111,7 +115,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(1054, 622);
+            this.button2.Location = new System.Drawing.Point(1076, 626);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 50);
             this.button2.TabIndex = 33;
@@ -154,7 +158,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.Location = new System.Drawing.Point(197, 626);
+            this.button4.Location = new System.Drawing.Point(51, 622);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(150, 50);
             this.button4.TabIndex = 28;
@@ -165,13 +169,13 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.Location = new System.Drawing.Point(614, 626);
+            this.button3.Location = new System.Drawing.Point(288, 626);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 50);
             this.button3.TabIndex = 27;
-            this.button3.Text = "Cập Nhật";
+            this.button3.Text = "Sửa";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.btnCapNhat_Click);
+            this.button3.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // dataGridView1
             // 
@@ -275,6 +279,28 @@
             this.tabControl1.Size = new System.Drawing.Size(1321, 720);
             this.tabControl1.TabIndex = 2;
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button5.Location = new System.Drawing.Point(534, 626);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(150, 50);
+            this.button5.TabIndex = 36;
+            this.button5.Text = "Lưu";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button7.Location = new System.Drawing.Point(802, 626);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(150, 50);
+            this.button7.TabIndex = 37;
+            this.button7.Text = "Hủy";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.btnHuy_click);
+            // 
             // Khachhang_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -314,5 +340,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button7;
     }
 }

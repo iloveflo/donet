@@ -88,7 +88,8 @@ namespace ClothingStore.Admin
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtTenNhanVien.Text) ||
+            if (string.IsNullOrWhiteSpace(txtMaNhanVien.Text) ||
+                string.IsNullOrWhiteSpace(txtTenNhanVien.Text) ||
                 string.IsNullOrWhiteSpace(txtDiaChi.Text) ||
                 string.IsNullOrWhiteSpace(txtSoDienThoai.Text) || string.IsNullOrWhiteSpace(txtEmail.Text)||
                 cmbGioiTinh.SelectedItem == null || cmbCongViec.SelectedItem == null)
@@ -236,6 +237,24 @@ namespace ClothingStore.Admin
                     }
                 }
             }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            txtMaNhanVien.Enabled = false;
+            button1.Enabled = false;
+            btnXoa.Enabled = false;
+            button3.Enabled = false;
+            button4.Enabled = false;
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            txtMaNhanVien.Enabled = true;
+            button1.Enabled = true;
+            btnXoa.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)

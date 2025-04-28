@@ -30,6 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -37,7 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btn_them_NV = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.cmbCongViec = new System.Windows.Forms.ComboBox();
@@ -74,6 +76,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.MistyRose;
+            this.tabPage1.Controls.Add(this.button7);
+            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.txtEmail);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.button3);
@@ -81,7 +85,7 @@
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.btn_them_NV);
+            this.tabPage1.Controls.Add(this.btnXoa);
             this.tabPage1.Controls.Add(this.dtpNgaySinh);
             this.tabPage1.Controls.Add(this.dgvNhanVien);
             this.tabPage1.Controls.Add(this.cmbCongViec);
@@ -105,6 +109,28 @@
             this.tabPage1.Size = new System.Drawing.Size(1487, 733);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nhân viên";
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button7.Location = new System.Drawing.Point(1005, 670);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(150, 50);
+            this.button7.TabIndex = 37;
+            this.button7.Text = "Hủy";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button5.Location = new System.Drawing.Point(779, 670);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(150, 50);
+            this.button5.TabIndex = 36;
+            this.button5.Text = "Lưu";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // txtEmail
             // 
@@ -151,7 +177,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(189, 670);
+            this.button1.Location = new System.Drawing.Point(58, 670);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 50);
             this.button1.TabIndex = 24;
@@ -162,7 +188,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.Location = new System.Drawing.Point(1225, 670);
+            this.button4.Location = new System.Drawing.Point(1265, 670);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(150, 50);
             this.button4.TabIndex = 23;
@@ -173,24 +199,24 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(862, 670);
+            this.button2.Location = new System.Drawing.Point(532, 670);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 50);
             this.button2.TabIndex = 21;
-            this.button2.Text = "Cập Nhật";
+            this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btnCapNhat_Click);
+            this.button2.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // btn_them_NV
+            // btnXoa
             // 
-            this.btn_them_NV.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_them_NV.Location = new System.Drawing.Point(499, 670);
-            this.btn_them_NV.Name = "btn_them_NV";
-            this.btn_them_NV.Size = new System.Drawing.Size(150, 50);
-            this.btn_them_NV.TabIndex = 20;
-            this.btn_them_NV.Text = "Xóa";
-            this.btn_them_NV.UseVisualStyleBackColor = true;
-            this.btn_them_NV.Click += new System.EventHandler(this.btnXoa_Click);
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnXoa.Location = new System.Drawing.Point(291, 670);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(150, 50);
+            this.btnXoa.TabIndex = 20;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // dtpNgaySinh
             // 
@@ -297,11 +323,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(28, 114);
+            this.label4.Location = new System.Drawing.Point(185, 109);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(302, 22);
+            this.label4.Size = new System.Drawing.Size(123, 22);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Tìm Kiếm Nhân Viên ( nhập MaNV):";
+            this.label4.Text = "Mã Nhân Viên";
             // 
             // label3
             // 
@@ -396,10 +422,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btn_them_NV;
+        private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button7;
     }
 }

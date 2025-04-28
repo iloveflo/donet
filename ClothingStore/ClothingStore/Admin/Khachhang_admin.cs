@@ -110,7 +110,23 @@ namespace ClothingStore.Admin
         }
 
         // 🟢 CẬP NHẬT THÔNG TIN KHÁCH HÀNG (KHÔNG ĐƯỢC CHỈNH SỬA MÃ KHÁCH HÀNG)
-        private void btnCapNhat_Click(object sender, EventArgs e)
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtMaKhachHang.Text))
+            {
+                MessageBox.Show("Hãy chọn một dòng để thao tác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Cho phép chỉnh sửa các TextBox
+            txtMaKhachHang.Enabled = false;
+            button1.Enabled=false;
+            button4.Enabled=false;
+            button2.Enabled=false;
+
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtMaKhachHang.Text))
             {
@@ -123,23 +139,37 @@ namespace ClothingStore.Admin
                 try
                 {
                     conn.Open();
-                    string updateQuery = "UPDATE KhachHang SET TenKhach = @TenKhach, DiaChi = @DiaChi, SoDienThoai = @SoDienThoai, Email=@Email WHERE MaKhachHang = @MaKhachHang";
+                    string updateQuery = "UPDATE KhachHang SET TenKhach = @TenKhach, DiaChi = @DiaChi, SoDienThoai = @SoDienThoai, Email = @Email WHERE MaKhachHang = @MaKhachHang";
                     MySqlCommand cmd = new MySqlCommand(updateQuery, conn);
                     cmd.Parameters.AddWithValue("@TenKhach", txtTenKhach.Text);
                     cmd.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
                     cmd.Parameters.AddWithValue("@SoDienThoai", txtSoDienThoai.Text);
-                    cmd.Parameters.AddWithValue("@MaKhachHang", txtMaKhachHang.Text);
                     cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
+                    cmd.Parameters.AddWithValue("@MaKhachHang", txtMaKhachHang.Text);
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Đã cập nhật thông tin khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Đã lưu thông tin khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadKhachHang();
+
+                    // Sau khi lưu, khóa lại TextBox
+                    txtMaKhachHang.Enabled = true;
+                    button1.Enabled = true;
+                    button4.Enabled = true;
+                    button2.Enabled = true;
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi khi cập nhật: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Lỗi khi lưu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+        
+        private void btnHuy_click(object sender, EventArgs e)
+        {
+            txtMaKhachHang.Enabled = true;
+            button1.Enabled = true;
+            button4.Enabled = true;
+            button2.Enabled = true;
         }
 
         // 🟢 TÌM KIẾM KHÁCH HÀNG THEO MÃ KHÁCH HÀNG
