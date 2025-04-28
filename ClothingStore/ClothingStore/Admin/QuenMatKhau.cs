@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using ClothingStore.Class;
 
 namespace ClothingStore.Admin
 {
@@ -28,7 +29,7 @@ namespace ClothingStore.Admin
                 return;
             }
 
-            string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
+            string connectionString = DatabaseHelper.ConnectionString;
             string email = "";
             string otp = GenerateOTP(); // Tạo mã OTP ngẫu nhiên
 

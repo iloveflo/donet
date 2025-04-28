@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClothingStore.Class;
 using MySql.Data.MySqlClient;
 
 namespace ClothingStore.Admin
@@ -16,7 +17,7 @@ namespace ClothingStore.Admin
         private string generatedOtp;
         private string userName;
         private string newPassword;
-        private string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
+        private string connectionString = DatabaseHelper.ConnectionString;
 
         public OTP(string otp, string user, string newPass)
         {

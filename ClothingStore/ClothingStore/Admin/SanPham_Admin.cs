@@ -81,7 +81,7 @@ namespace ClothingStore.Admin
             comboBoxNoiSanXuat.SelectedIndex = 0;
         }
         // Chuỗi kết nối cho MySQL
-        private string connectionString = "server=192.168.0.101;database=ClothingStore;uid=root;pwd=binh11a10;";
+        private string connectionString = DatabaseHelper.ConnectionString;
 
         // Load dữ liệu vào DataGridView
         private void LoadDataGridView()

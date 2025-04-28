@@ -15,7 +15,7 @@ namespace ClothingStore.Admin
 {
     public partial class Khachhang_admin : Form
     {
-        private string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
+        private string connectionString = DatabaseHelper.ConnectionString;
 
         public Khachhang_admin()
         {

@@ -17,7 +17,7 @@ namespace ClothingStore.ThongKe
     public partial class ThongKe : Form
     {
         private string loaitaikhoan = SessionManager.LoaiTaiKhoanDangNhap;
-        private string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
+        private string connectionString = DatabaseHelper.ConnectionString;
 
         public ThongKe()
         {

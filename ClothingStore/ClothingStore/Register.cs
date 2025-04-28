@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using ClothingStore.Class;
 using MySql.Data.MySqlClient;
 
 namespace ClothingStore
 {
     public partial class Register : Form
     {
-        private string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
+        private string connectionString = DatabaseHelper.ConnectionString;
         private string currentCaptchaCode = "";
         private int currentCaptchaId = -1;
         private Random random = new Random();

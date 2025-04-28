@@ -179,6 +179,7 @@
     <Compile Include="Admin\SanPham_Admin.Designer.cs">
       <DependentUpon>SanPham_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class\DatabaseHelper.cs" />
     <Compile Include="Class\SessionManager.cs" />
     <Compile Include="HoaDonBan\HoaDonBan.cs">
       <SubType>Form</SubType>

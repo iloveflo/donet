@@ -15,7 +15,7 @@ namespace ClothingStore.KhachHang
 {
     public partial class KhachHang : Form
     {
-        private string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
+        private string connectionString = DatabaseHelper.ConnectionString;
         private MySqlConnection conn;
 
         public KhachHang()

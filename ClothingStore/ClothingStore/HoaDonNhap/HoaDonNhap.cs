@@ -14,7 +14,7 @@ namespace ClothingStore.HoaDonNhap
 {
     public partial class HoaDonNhap : Form
     {
-        private string connectionString = "server=192.168.0.101;database=ClothingStore;user=root;password=binh11a10;";
+        private string connectionString = DatabaseHelper.ConnectionString;
         private MySqlConnection connection;
 
         public HoaDonNhap()
