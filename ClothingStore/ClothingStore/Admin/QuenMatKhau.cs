@@ -96,7 +96,7 @@ namespace ClothingStore.Admin
                 MailMessage mail = new MailMessage();
                 mail.From = new MailAddress("binha10k56@gmail.com"); // Email bạn gửi đi
                 mail.To.Add(toEmail);
-                mail.Subject = "Mã OTP đổi mật khẩu";
+                mail.Subject = "Mã OTP Quên mật khẩu";
                 mail.Body = $"Mã OTP của bạn là: {otpCode}";
 
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);

@@ -76,7 +76,7 @@ namespace ClothingStore.ThongKe
                     JOIN HoaDonBan hd ON ct.SoHoaDonBan = hd.SoHoaDonBan
                     GROUP BY sp.MaQuanAo, sp.TenQuanAo, sp.Anh
                     ORDER BY TongBan DESC
-                    LIMIT 3;";
+                    LIMIT 10;";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, connection))
                 {

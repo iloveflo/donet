@@ -85,7 +85,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.button1.Location = new System.Drawing.Point(348, 314);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(192, 43);
+            this.button1.Size = new System.Drawing.Size(200, 43);
             this.button1.TabIndex = 48;
             this.button1.Text = "Lấy lại qua OTP";
             this.button1.UseVisualStyleBackColor = true;
