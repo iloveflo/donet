@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using ClothingStore.Class;
 using MySql.Data.MySqlClient;
@@ -87,6 +88,19 @@ namespace ClothingStore
             if (password != rePassword)
             {
                 MessageBox.Show("Password và Re-enter Password chưa giống nhau!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // 🔹 Kiểm tra độ dài mã tài khoản
+            if (maTaiKhoan.Length > 10)
+            {
+                MessageBox.Show("Mã tài khoản không được vượt quá 10 ký tự!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Regex.IsMatch(soDienThoai, @"^\d{10}$"))
+            {
+                MessageBox.Show("Số điện thoại phải là 10 chữ số!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

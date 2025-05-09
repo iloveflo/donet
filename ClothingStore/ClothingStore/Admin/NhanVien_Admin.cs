@@ -98,6 +98,13 @@ namespace ClothingStore.Admin
                 return;
             }
 
+            // Kiểm tra mã nhân viên phải là số
+            if (!int.TryParse(txtMaNhanVien.Text, out _))
+            {
+                MessageBox.Show("Mã nhân viên phải là số!");
+                return;
+            }
+
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
