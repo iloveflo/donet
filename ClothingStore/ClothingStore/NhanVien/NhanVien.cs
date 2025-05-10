@@ -353,8 +353,9 @@ namespace ClothingStore.NhanVien
             try
             {
                 conn.Open();
-                string query = "SELECT g.MaKhachHang, g.MaQuanAo, s.TenQuanAo, g.DonGiaBan, g.SoLuongDat, g.TongTien FROM GioHang g " +
-                               "JOIN SanPham s ON g.MaQuanAo = s.MaQuanAo ";
+                string query = "SELECT g.MaKhachHang, g.MaQuanAo, s.TenQuanAo, g.DonGiaBan, g.SoLuongDat, g.TongTien, s.Anh " +
+                "FROM GioHang g " +
+                "JOIN SanPham s ON g.MaQuanAo = s.MaQuanAo";
 
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 var adapter = new MySqlDataAdapter(cmd);

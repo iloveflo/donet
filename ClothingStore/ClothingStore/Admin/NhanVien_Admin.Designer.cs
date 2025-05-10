@@ -236,7 +236,7 @@
             this.dgvNhanVien.RowHeadersWidth = 51;
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.Size = new System.Drawing.Size(1484, 282);
-            this.dgvNhanVien.TabIndex = 17;
+            this.dgvNhanVien.TabIndex = 15;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
             // cmbCongViec

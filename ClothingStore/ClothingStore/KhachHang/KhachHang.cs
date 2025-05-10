@@ -425,12 +425,24 @@ namespace ClothingStore.KhachHang
                 return;
             }
 
-            int soLuong = Convert.ToInt32(textBox1.Text.Trim());
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng đặt!");
+                return;
+            }
+
+            if (!int.TryParse(textBox1.Text.Trim(), out int soLuong))
+            {
+                MessageBox.Show("Số lượng đặt phải là một số nguyên hợp lệ!");
+                return;
+            }
+
             if (soLuong <= 0)
             {
                 MessageBox.Show("Số lượng đặt phải lớn hơn 0!");
                 return;
             }
+
             if(label4.Text == "Giỏ hàng của bạn")
             {
                 MessageBox.Show("Không thể thực hiện !!!!!");
@@ -576,11 +588,38 @@ namespace ClothingStore.KhachHang
         }
         private void BtnDatHang_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đặt hàng?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            string maKhachHang = SessionManager.MaTaiKhoanDangNhap;
 
-            if (result == DialogResult.Yes)
+            try
             {
-                MessageBox.Show("Bạn đã đặt hàng thành công!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM GioHang WHERE MaKhachHang = @maKhachHang";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@maKhachHang", maKhachHang);
+
+                int soLuong = Convert.ToInt32(cmd.ExecuteScalar());
+
+                if (soLuong == 0)
+                {
+                    MessageBox.Show("Giỏ hàng của bạn đang trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đặt toàn bộ hàng trong giỏ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    MessageBox.Show("Bạn đã đặt hàng thành công, đơn hàng sẽ sớm được xử lý !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi kiểm tra giỏ hàng: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
             }
         }
         private void btnReload_Click(object sender, EventArgs e)
