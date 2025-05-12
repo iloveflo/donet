@@ -101,7 +101,7 @@ namespace ClothingStore
                                             updateCmd.Parameters.AddWithValue("@MaTaiKhoan", SessionManager.MaTaiKhoanDangNhap);
                                             updateCmd.ExecuteNonQuery();
                                         }
-                                        NhanVien.NhanVien nhanVien= new NhanVien.NhanVien();
+                                        NhanVien.Nhan_Vien nhanVien= new NhanVien.Nhan_Vien();
                                         nhanVien.Show();
                                         this.Hide();
                                         break;

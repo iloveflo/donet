@@ -137,9 +137,9 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.Location = new System.Drawing.Point(606, 458);
+            this.button3.Location = new System.Drawing.Point(606, 467);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 60);
+            this.button3.Size = new System.Drawing.Size(167, 43);
             this.button3.TabIndex = 11;
             this.button3.Text = "Quên Mật Khẩu";
             this.button3.UseVisualStyleBackColor = true;

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using ClothingStore.Class;
+using ClothingStore.KhachHang;
 using MySql.Data.MySqlClient;
 
 namespace ClothingStore.Admin
@@ -15,42 +16,39 @@ namespace ClothingStore.Admin
 
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
-            Khachhang_admin khachhangForm = new Khachhang_admin();
-            khachhangForm.Show();
-            this.Hide();
+            LoadControl(new Khachhang_UserControl());
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
-            NhanVien_Admin nhanvienForm = new NhanVien_Admin();
-            nhanvienForm.Show();
-            this.Hide();
+            LoadControl(new NhanVien_UserControl());
         }
 
         private void btnSanPham_Click(object sender, EventArgs e)
         {
-            SanPham_Admin sanphamForm = new SanPham_Admin();
-            sanphamForm.Show();
-            this.Hide();
+            LoadControl(new SanPham_UserControl());
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            ThongKe.ThongKe thongkeForm = new ThongKe.ThongKe();
-            thongkeForm.Show();
-            this.Hide();
+            LoadControl(new ThongKe_UserControl());
         }
         private void btnThongKe1_Click(object sender, EventArgs e)
         {
-            ThongKe.ThongKe1 thongkeForm = new ThongKe.ThongKe1();
-            thongkeForm.Show();
-            this.Hide();
+            LoadControl(new ThongKe1_UserControl());
         }
         private void btnDoanhThu_Click(object sender, EventArgs e)
         {
-            ThongKe.DoanhThu doanhThu= new ThongKe.DoanhThu();
-            doanhThu.Show();
-            this.Hide();
+            LoadControl(new DoanhThu_UserControl());
+        }
+        private void btnHoaDonBan_Click(object sender, EventArgs e)
+        {
+            LoadControl(new HoaDonBan.HoaDonBan_UserControl());
+        }
+
+        private void btnHoaDonNhap_Click(object sender, EventArgs e)
+        {
+            LoadControl(new HoaDonNhap.HoaDonNhap_UserControl());
         }
         private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
@@ -93,8 +91,12 @@ namespace ClothingStore.Admin
                 SessionManager.ClearSession();
             }
         }
-
-
+        private void LoadControl(UserControl uc)
+        {
+            panelMain.Controls.Clear();
+            uc.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(uc);
+        }
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
             Main mainForm = new Main();

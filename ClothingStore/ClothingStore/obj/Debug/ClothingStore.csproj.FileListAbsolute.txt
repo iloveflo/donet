@@ -134,3 +134,15 @@ D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.csproj.CoreComp
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\Clothing.5BC3D267.Up2Date
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.exe
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.pdb
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.Khachhang_UserControl.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.NhanVien_UserControl.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.SanPham_UserControl.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.DoanhThu_UserControl.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.ThongKe_UserControl.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.ThongKe1_UserControl.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.HoaDonBan.HoaDonBan_UserControl.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.HoaDonNhap.HoaDonNhap_UserControl.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.NhanVien.Nhan_Vien.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.NhanVien.SanPhamNV_UserControl.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.HoaDonNhap.HoaDonNhapNV_UserControl.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.NhanVien.XemDatHang_UserControl.resources

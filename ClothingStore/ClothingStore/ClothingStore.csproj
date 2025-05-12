@@ -137,23 +137,35 @@
     <Compile Include="Admin\Adimin.Designer.cs">
       <DependentUpon>Adimin.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVien\XemDatHang_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NhanVien\XemDatHang_UserControl.Designer.cs">
+      <DependentUpon>XemDatHang_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\DoanhThu_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThongKe\DoanhThu_UserControl.Designer.cs">
+      <DependentUpon>DoanhThu_UserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Khachhang_admin.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Admin\Khachhang_UserControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\Khachhang_admin.Designer.cs">
-      <DependentUpon>Khachhang_admin.cs</DependentUpon>
+    <Compile Include="Admin\Khachhang_UserControl.Designer.cs">
+      <DependentUpon>Khachhang_UserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\NhanVien_Admin.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Admin\NhanVien_UserControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\NhanVien_Admin.Designer.cs">
-      <DependentUpon>NhanVien_Admin.cs</DependentUpon>
+    <Compile Include="Admin\NhanVien_UserControl.Designer.cs">
+      <DependentUpon>NhanVien_UserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\OTP.cs">
       <SubType>Form</SubType>
@@ -173,25 +185,43 @@
     <Compile Include="Admin\QuenMatKhau.Designer.cs">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\SanPham_Admin.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Admin\SanPham_UserControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\SanPham_Admin.Designer.cs">
-      <DependentUpon>SanPham_Admin.cs</DependentUpon>
+    <Compile Include="Admin\SanPham_UserControl.Designer.cs">
+      <DependentUpon>SanPham_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\ThongKe1_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThongKe\ThongKe1_UserControl.Designer.cs">
+      <DependentUpon>ThongKe1_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\ThongKe_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThongKe\ThongKe_UserControl.Designer.cs">
+      <DependentUpon>ThongKe_UserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\DatabaseHelper.cs" />
     <Compile Include="Class\SessionManager.cs" />
-    <Compile Include="HoaDonBan\HoaDonBan.cs">
-      <SubType>Form</SubType>
+    <Compile Include="HoaDonBan\HoaDonBan_UserControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HoaDonBan\HoaDonBan.Designer.cs">
-      <DependentUpon>HoaDonBan.cs</DependentUpon>
+    <Compile Include="HoaDonBan\HoaDonBan_UserControl.Designer.cs">
+      <DependentUpon>HoaDonBan_UserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="HoaDonNhap\HoaDonNhap.cs">
-      <SubType>Form</SubType>
+    <Compile Include="HoaDonNhap\HoaDonNhapNV_UserControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HoaDonNhap\HoaDonNhap.Designer.cs">
-      <DependentUpon>HoaDonNhap.cs</DependentUpon>
+    <Compile Include="HoaDonNhap\HoaDonNhapNV_UserControl.Designer.cs">
+      <DependentUpon>HoaDonNhapNV_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonNhap\HoaDonNhap_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HoaDonNhap\HoaDonNhap_UserControl.Designer.cs">
+      <DependentUpon>HoaDonNhap_UserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="KhachHang\KhachHang.cs">
       <SubType>Form</SubType>
@@ -205,11 +235,17 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhanVien\NhanVien.cs">
+    <Compile Include="NhanVien\Nhan_Vien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhanVien\NhanVien.Designer.cs">
-      <DependentUpon>NhanVien.cs</DependentUpon>
+    <Compile Include="NhanVien\Nhan_Vien.Designer.cs">
+      <DependentUpon>Nhan_Vien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien\SanPhamNV_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NhanVien\SanPhamNV_UserControl.Designer.cs">
+      <DependentUpon>SanPhamNV_UserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -219,35 +255,23 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongKe\DoanhThu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThongKe\DoanhThu.Designer.cs">
-      <DependentUpon>DoanhThu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ThongKe\ThongKe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThongKe\ThongKe.Designer.cs">
-      <DependentUpon>ThongKe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ThongKe\ThongKe1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThongKe\ThongKe1.Designer.cs">
-      <DependentUpon>ThongKe1.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Admin\Adimin.resx">
       <DependentUpon>Adimin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\XemDatHang_UserControl.resx">
+      <DependentUpon>XemDatHang_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\DoanhThu_UserControl.resx">
+      <DependentUpon>DoanhThu_UserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Khachhang_admin.resx">
-      <DependentUpon>Khachhang_admin.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\Khachhang_UserControl.resx">
+      <DependentUpon>Khachhang_UserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\NhanVien_Admin.resx">
-      <DependentUpon>NhanVien_Admin.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\NhanVien_UserControl.resx">
+      <DependentUpon>NhanVien_UserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\OTP.resx">
       <DependentUpon>OTP.cs</DependentUpon>
@@ -258,14 +282,23 @@
     <EmbeddedResource Include="Admin\QuenMatKhau.resx">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\SanPham_Admin.resx">
-      <DependentUpon>SanPham_Admin.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\SanPham_UserControl.resx">
+      <DependentUpon>SanPham_UserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HoaDonBan\HoaDonBan.resx">
-      <DependentUpon>HoaDonBan.cs</DependentUpon>
+    <EmbeddedResource Include="ThongKe\ThongKe1_UserControl.resx">
+      <DependentUpon>ThongKe1_UserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HoaDonNhap\HoaDonNhap.resx">
-      <DependentUpon>HoaDonNhap.cs</DependentUpon>
+    <EmbeddedResource Include="ThongKe\ThongKe_UserControl.resx">
+      <DependentUpon>ThongKe_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonBan\HoaDonBan_UserControl.resx">
+      <DependentUpon>HoaDonBan_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonNhap\HoaDonNhapNV_UserControl.resx">
+      <DependentUpon>HoaDonNhapNV_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonNhap\HoaDonNhap_UserControl.resx">
+      <DependentUpon>HoaDonNhap_UserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang\KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
@@ -273,8 +306,11 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhanVien\NhanVien.resx">
-      <DependentUpon>NhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="NhanVien\Nhan_Vien.resx">
+      <DependentUpon>Nhan_Vien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\SanPhamNV_UserControl.resx">
+      <DependentUpon>SanPhamNV_UserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -288,15 +324,6 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ThongKe\DoanhThu.resx">
-      <DependentUpon>DoanhThu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ThongKe\ThongKe.resx">
-      <DependentUpon>ThongKe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ThongKe\ThongKe1.resx">
-      <DependentUpon>ThongKe1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
