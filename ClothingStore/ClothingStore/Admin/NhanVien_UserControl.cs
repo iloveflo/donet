@@ -250,7 +250,6 @@ namespace ClothingStore.Admin
             button1.Enabled = false;
             btnXoa.Enabled = false;
             button3.Enabled = false;
-            button4.Enabled = false;
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -259,7 +258,6 @@ namespace ClothingStore.Admin
             button1.Enabled = true;
             btnXoa.Enabled = true;
             button3.Enabled = true;
-            button4.Enabled = true;
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
@@ -275,16 +273,62 @@ namespace ClothingStore.Admin
                 try
                 {
                     conn.Open();
-                    string updateQuery = "UPDATE NhanVien SET TenNhanVien = @TenNhanVien, NgaySinh = @NgaySinh, DiaChi = @DiaChi,Email=@Email, SoDienThoai = @SoDienThoai, GioiTinh = @GioiTinh, MaCongViec = (SELECT MaCongViec FROM CongViec WHERE TenCongViec = @TenCongViec) WHERE MaNhanVien = @MaNhanVien";
+
+                    string maNhanVien = txtMaNhanVien.Text.Trim();
+                    string soDienThoai = txtSoDienThoai.Text.Trim();
+                    string email = txtEmail.Text.Trim();
+
+                    // Kiểm tra trùng với Khách hàng
+                    string checkKhachHangQuery = "SELECT COUNT(*) FROM KhachHang WHERE SoDienThoai = @SDT OR Email = @Email";
+                    using (MySqlCommand cmdKH = new MySqlCommand(checkKhachHangQuery, conn))
+                    {
+                        cmdKH.Parameters.AddWithValue("@SDT", soDienThoai);
+                        cmdKH.Parameters.AddWithValue("@Email", email);
+
+                        int countKH = Convert.ToInt32(cmdKH.ExecuteScalar());
+                        if (countKH > 0)
+                        {
+                            MessageBox.Show("Số điện thoại hoặc email này đã tồn tại ", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    }
+
+                    // Kiểm tra trùng với Nhân viên khác
+                    string checkNhanVienQuery = "SELECT COUNT(*) FROM NhanVien WHERE (SoDienThoai = @SDT OR Email = @Email) AND MaNhanVien != @MaNhanVien";
+                    using (MySqlCommand cmdNV = new MySqlCommand(checkNhanVienQuery, conn))
+                    {
+                        cmdNV.Parameters.AddWithValue("@SDT", soDienThoai);
+                        cmdNV.Parameters.AddWithValue("@Email", email);
+                        cmdNV.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
+
+                        int countNV = Convert.ToInt32(cmdNV.ExecuteScalar());
+                        if (countNV > 0)
+                        {
+                            MessageBox.Show("Số điện thoại hoặc email này đã tồn tại ", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    }
+
+                    // Cập nhật nếu không trùng
+                    string updateQuery = @"UPDATE NhanVien 
+                                   SET TenNhanVien = @TenNhanVien, 
+                                       NgaySinh = @NgaySinh, 
+                                       DiaChi = @DiaChi,
+                                       Email = @Email, 
+                                       SoDienThoai = @SoDienThoai, 
+                                       GioiTinh = @GioiTinh, 
+                                       MaCongViec = (SELECT MaCongViec FROM CongViec WHERE TenCongViec = @TenCongViec) 
+                                   WHERE MaNhanVien = @MaNhanVien";
+
                     MySqlCommand cmd = new MySqlCommand(updateQuery, conn);
-                    cmd.Parameters.AddWithValue("@TenNhanVien", txtTenNhanVien.Text);
+                    cmd.Parameters.AddWithValue("@TenNhanVien", txtTenNhanVien.Text.Trim());
                     cmd.Parameters.AddWithValue("@NgaySinh", dtpNgaySinh.Value);
-                    cmd.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
-                    cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
-                    cmd.Parameters.AddWithValue("@SoDienThoai", txtSoDienThoai.Text);
-                    cmd.Parameters.AddWithValue("@GioiTinh", cmbGioiTinh.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@TenCongViec", cmbCongViec.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@MaNhanVien", txtMaNhanVien.Text);
+                    cmd.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text.Trim());
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@SoDienThoai", soDienThoai);
+                    cmd.Parameters.AddWithValue("@GioiTinh", cmbGioiTinh.SelectedItem?.ToString());
+                    cmd.Parameters.AddWithValue("@TenCongViec", cmbCongViec.SelectedItem?.ToString());
+                    cmd.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
 
                     cmd.ExecuteNonQuery();
 
@@ -297,6 +341,7 @@ namespace ClothingStore.Admin
                 }
             }
         }
+
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtMaNhanVien.Text))
@@ -310,7 +355,24 @@ namespace ClothingStore.Admin
                 try
                 {
                     conn.Open();
-                    string query = "SELECT * FROM NhanVien WHERE MaNhanVien = @MaNhanVien";
+                    string query = @"
+                    SELECT 
+                        nv.MaNhanVien,
+                        nv.TenNhanVien,
+                        nv.GioiTinh,
+                        nv.NgaySinh,
+                        nv.SoDienThoai,
+                        nv.DiaChi,
+                        nv.Email,
+                        nv.MaCongViec,
+                        cv.TenCongViec
+                    FROM 
+                        NhanVien nv
+                    INNER JOIN 
+                        CongViec cv ON nv.MaCongViec = cv.MaCongViec
+                    WHERE 
+                        nv.MaNhanVien = @MaNhanVien";
+
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@MaNhanVien", txtMaNhanVien.Text);
                     MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);

@@ -154,7 +154,7 @@
             // 
             // panelMain
             // 
-            this.panelMain.BackColor = System.Drawing.Color.White;
+            this.panelMain.BackColor = System.Drawing.Color.LightGray;
             this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMain.Location = new System.Drawing.Point(213, 129);
             this.panelMain.Name = "panelMain";

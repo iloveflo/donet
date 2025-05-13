@@ -150,6 +150,7 @@ namespace ClothingStore.NhanVien
                     {
                         string anh = dataGridView1.Rows[e.RowIndex].Cells["Anh"].Value.ToString();
                         pictureBox1.ImageLocation = anh;
+                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     }
 
                 }
@@ -320,20 +321,6 @@ namespace ClothingStore.NhanVien
             {
                 conn.Close();
             }
-        }
-        private void btnReload_Click(object sender, EventArgs e)
-        {
-            LoadDataGridView();
-            txtMaQuanAo.Clear();
-            txtTenQuanAo.Clear();
-            txtDonGiaBan.Clear();
-            cboChatLieu.Text = null;
-            cboCo.Text = null;
-            cboDoiTuong.Text = null;
-            cboLoai.Text = null;
-            cboMau.Text = null;
-            cboMua.Text = null;
-            cboNoiSanXuat.Text = null;
         }
     }
 }

@@ -376,24 +376,6 @@ namespace ClothingStore.Admin
                 picAnh.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
-        private void btnReload_Click(object sender, EventArgs e)
-        {
-            LoadDataGridView();
-            comboBoxLoai.Text = null;
-            comboBoxCo.Text = null;
-            comboBoxChatLieu.Text = null;
-            comboBoxMua.Text = null;
-            comboBoxMau.Text = null;
-            comboBoxDoiTuong.Text = null;
-            comboBoxNoiSanXuat.Text = null;
-            txtMaQuanAo.Clear();
-            txtTenQuanAo.Clear();
-            txtSoLuong.Clear();
-            txtDonGiaNhap.Clear();
-            txtAnh.Clear();
-            txtDonGiaBan.Clear();
-            picAnh.Image = null;
-        }
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -475,6 +457,24 @@ namespace ClothingStore.Admin
                     conn.Close();
                 }
             }
+        }
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            LoadDataGridView();
+            comboBoxLoai.Text = null;
+            comboBoxCo.Text = null;
+            comboBoxChatLieu.Text = null;
+            comboBoxMua.Text = null;
+            comboBoxMau.Text = null;
+            comboBoxDoiTuong.Text = null;
+            comboBoxNoiSanXuat.Text = null;
+            txtMaQuanAo.Clear();
+            txtTenQuanAo.Clear();
+            txtSoLuong.Clear();
+            txtDonGiaNhap.Clear();
+            txtAnh.Clear();
+            txtDonGiaBan.Clear();
+            picAnh.Image = null;
         }
     }
 }

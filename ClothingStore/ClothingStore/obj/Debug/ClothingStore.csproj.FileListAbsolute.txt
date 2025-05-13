@@ -113,22 +113,13 @@ D:\ProjectC#\ClothingStore\ClothingStore\bin\Debug\System.Threading.Tasks.Extens
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.csproj.AssemblyReference.cache
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.Adimin.resources
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.DoiMatKhau.resources
-D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.Khachhang_admin.resources
-D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.NhanVien_Admin.resources
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.OTP.resources
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.OTP1.resources
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.QuenMatKhau.resources
-D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.SanPham_Admin.resources
-D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.HoaDonBan.HoaDonBan.resources
-D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.HoaDonNhap.HoaDonNhap.resources
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.KhachHang.KhachHang.resources
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Main.resources
-D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.NhanVien.NhanVien.resources
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Properties.Resources.resources
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Register.resources
-D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.ThongKe.DoanhThu.resources
-D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.ThongKe.ThongKe.resources
-D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.ThongKe.ThongKe1.resources
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.csproj.GenerateResource.cache
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.csproj.CoreCompileInputs.cache
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\Clothing.5BC3D267.Up2Date
@@ -146,3 +137,4 @@ D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.NhanVien.Nhan_V
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.NhanVien.SanPhamNV_UserControl.resources
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.HoaDonNhap.HoaDonNhapNV_UserControl.resources
 D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.NhanVien.XemDatHang_UserControl.resources
+D:\ProjectC#\ClothingStore\ClothingStore\obj\Debug\ClothingStore.Admin.TaiKhoan.resources

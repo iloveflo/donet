@@ -63,7 +63,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_them_NV = new System.Windows.Forms.Button();
-            this.btnReload = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSanPham)).BeginInit();
             this.SuspendLayout();
@@ -386,7 +386,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(22, 531);
+            this.button1.Location = new System.Drawing.Point(46, 531);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 50);
             this.button1.TabIndex = 89;
@@ -397,7 +397,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(675, 531);
+            this.button2.Location = new System.Drawing.Point(636, 531);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 50);
             this.button2.TabIndex = 88;
@@ -408,7 +408,7 @@
             // btn_them_NV
             // 
             this.btn_them_NV.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_them_NV.Location = new System.Drawing.Point(345, 531);
+            this.btn_them_NV.Location = new System.Drawing.Point(329, 531);
             this.btn_them_NV.Name = "btn_them_NV";
             this.btn_them_NV.Size = new System.Drawing.Size(150, 50);
             this.btn_them_NV.TabIndex = 87;
@@ -416,22 +416,22 @@
             this.btn_them_NV.UseVisualStyleBackColor = true;
             this.btn_them_NV.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // btnReload
+            // button5
             // 
-            this.btnReload.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnReload.Location = new System.Drawing.Point(1009, 531);
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(150, 50);
-            this.btnReload.TabIndex = 90;
-            this.btnReload.Text = "Reload";
-            this.btnReload.UseVisualStyleBackColor = true;
-            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button5.Location = new System.Drawing.Point(960, 531);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(150, 50);
+            this.button5.TabIndex = 90;
+            this.button5.Text = "Reload";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // SanPham_UserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnReload);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_them_NV);
@@ -514,6 +514,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_them_NV;
-        private System.Windows.Forms.Button btnReload;
+        private System.Windows.Forms.Button button5;
     }
 }

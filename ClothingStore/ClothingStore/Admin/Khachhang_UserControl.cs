@@ -118,10 +118,8 @@ namespace ClothingStore.Admin
             txtMaKhachHang.Enabled = false;
             button1.Enabled = false;
             button4.Enabled = false;
-            button2.Enabled = false;
 
         }
-
         private void btnLuu_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtMaKhachHang.Text))
@@ -135,23 +133,60 @@ namespace ClothingStore.Admin
                 try
                 {
                     conn.Open();
-                    string updateQuery = "UPDATE KhachHang SET TenKhach = @TenKhach, DiaChi = @DiaChi, SoDienThoai = @SoDienThoai, Email = @Email WHERE MaKhachHang = @MaKhachHang";
+
+                    string soDienThoai = txtSoDienThoai.Text.Trim();
+                    string email = txtEmail.Text.Trim();
+                    string maKhachHang = txtMaKhachHang.Text.Trim();
+
+                    // Kiểm tra trùng số điện thoại hoặc email trong bảng NhanVien
+                    string checkNhanVienQuery = @"SELECT COUNT(*) FROM NhanVien 
+                                          WHERE SoDienThoai = @SDT OR Email = @Email";
+                    MySqlCommand cmdCheckNV = new MySqlCommand(checkNhanVienQuery, conn);
+                    cmdCheckNV.Parameters.AddWithValue("@SDT", soDienThoai);
+                    cmdCheckNV.Parameters.AddWithValue("@Email", email);
+
+                    int countNV = Convert.ToInt32(cmdCheckNV.ExecuteScalar());
+                    if (countNV > 0)
+                    {
+                        MessageBox.Show("Số điện thoại hoặc email này đã tồn tại ", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    // Kiểm tra trùng số điện thoại hoặc email trong bảng KhachHang (ngoại trừ bản ghi đang sửa)
+                    string checkKhachQuery = @"SELECT COUNT(*) FROM KhachHang 
+                                       WHERE (SoDienThoai = @SDT OR Email = @Email) 
+                                         AND MaKhachHang != @MaKhachHang";
+                    MySqlCommand cmdCheckKH = new MySqlCommand(checkKhachQuery, conn);
+                    cmdCheckKH.Parameters.AddWithValue("@SDT", soDienThoai);
+                    cmdCheckKH.Parameters.AddWithValue("@Email", email);
+                    cmdCheckKH.Parameters.AddWithValue("@MaKhachHang", maKhachHang);
+
+                    int countKH = Convert.ToInt32(cmdCheckKH.ExecuteScalar());
+                    if (countKH > 0)
+                    {
+                        MessageBox.Show("Số điện thoại hoặc email này đã tồn tại ", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    // Nếu không trùng, thực hiện cập nhật
+                    string updateQuery = @"UPDATE KhachHang 
+                                   SET TenKhach = @TenKhach, DiaChi = @DiaChi, 
+                                       SoDienThoai = @SoDienThoai, Email = @Email 
+                                   WHERE MaKhachHang = @MaKhachHang";
                     MySqlCommand cmd = new MySqlCommand(updateQuery, conn);
-                    cmd.Parameters.AddWithValue("@TenKhach", txtTenKhach.Text);
-                    cmd.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
-                    cmd.Parameters.AddWithValue("@SoDienThoai", txtSoDienThoai.Text);
-                    cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
-                    cmd.Parameters.AddWithValue("@MaKhachHang", txtMaKhachHang.Text);
+                    cmd.Parameters.AddWithValue("@TenKhach", txtTenKhach.Text.Trim());
+                    cmd.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text.Trim());
+                    cmd.Parameters.AddWithValue("@SoDienThoai", soDienThoai);
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@MaKhachHang", maKhachHang);
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Đã lưu thông tin khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadKhachHang();
 
-                    // Sau khi lưu, khóa lại TextBox
                     txtMaKhachHang.Enabled = true;
                     button1.Enabled = true;
                     button4.Enabled = true;
-                    button2.Enabled = true;
                 }
                 catch (Exception ex)
                 {
@@ -165,7 +200,6 @@ namespace ClothingStore.Admin
             txtMaKhachHang.Enabled = true;
             button1.Enabled = true;
             button4.Enabled = true;
-            button2.Enabled = true;
         }
 
         // 🟢 TÌM KIẾM KHÁCH HÀNG THEO MÃ KHÁCH HÀNG
@@ -197,11 +231,7 @@ namespace ClothingStore.Admin
             }
         }
 
-        // 🟢 HIỂN THỊ DANH SÁCH KHÁCH HÀNG & LÀM SẠCH TEXTBOX
-        private void btnHienThi_Click(object sender, EventArgs e)
-        {
-            LoadKhachHang();
-        }
+        
         // 🟢 HÀM XÓA TEXTBOX
         private void ClearTextBoxes()
         {

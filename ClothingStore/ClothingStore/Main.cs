@@ -10,11 +10,57 @@ namespace ClothingStore
     public partial class Main : Form
     {
         private string connectionString = DatabaseHelper.ConnectionString;
-
+        private string currentCaptchaCode = "";
+        private int currentCaptchaId = -1;
+        private Random random = new Random();
         public Main()
         {
             InitializeComponent();
             txtPassword.PasswordChar = '*';
+            LoadRandomCaptcha();
+        }
+        private void LoadRandomCaptcha()
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+
+                // Đếm tổng số CAPTCHA có trong bảng
+                string countQuery = "SELECT COUNT(*) FROM CapCha";
+                int count = 0;
+                using (MySqlCommand cmdCount = new MySqlCommand(countQuery, conn))
+                {
+                    count = Convert.ToInt32(cmdCount.ExecuteScalar());
+                }
+                if (count == 0)
+                {
+                    MessageBox.Show("Không có CAPTCHA nào trong cơ sở dữ liệu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                // Chọn ID ngẫu nhiên
+                int randomIndex = random.Next(0, count);
+
+                // Lấy CAPTCHA theo chỉ mục ngẫu nhiên
+                string query = $"SELECT MaAnh, LinkAnh, KetQua FROM CapCha LIMIT {randomIndex}, 1";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        currentCaptchaId = reader.GetInt32("MaAnh");
+                        currentCaptchaCode = reader.GetString("KetQua");
+                        pictureBoxCaptcha.ImageLocation = reader.GetString("LinkAnh");
+                    }
+                }
+            }
+        }
+        private void btnChangeCaptcha_Click(object sender, EventArgs e)
+        {
+            int previousId = currentCaptchaId;
+            do
+            {
+                LoadRandomCaptcha();
+            } while (currentCaptchaId == previousId);
         }
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
@@ -30,6 +76,12 @@ namespace ClothingStore
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Hãy nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (txtCaptcha.Text.Trim() != currentCaptchaCode)
+            {
+                MessageBox.Show("CAPTCHA không đúng! Vui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

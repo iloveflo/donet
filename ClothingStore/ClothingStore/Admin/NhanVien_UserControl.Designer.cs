@@ -52,7 +52,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -242,7 +241,7 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button7.Location = new System.Drawing.Point(802, 524);
+            this.button7.Location = new System.Drawing.Point(992, 524);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(124, 50);
             this.button7.TabIndex = 59;
@@ -253,7 +252,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button5.Location = new System.Drawing.Point(577, 524);
+            this.button5.Location = new System.Drawing.Point(743, 524);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(119, 50);
             this.button5.TabIndex = 58;
@@ -275,7 +274,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(381, 524);
+            this.button2.Location = new System.Drawing.Point(482, 524);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 50);
             this.button2.TabIndex = 56;
@@ -286,7 +285,7 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnXoa.Location = new System.Drawing.Point(188, 524);
+            this.btnXoa.Location = new System.Drawing.Point(234, 524);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(114, 50);
             this.btnXoa.TabIndex = 55;
@@ -294,22 +293,10 @@
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.Location = new System.Drawing.Point(1008, 524);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(130, 50);
-            this.button4.TabIndex = 60;
-            this.button4.Text = "ReLoad";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.btnHienThi_Click);
-            // 
             // NhanVien_UserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button1);
@@ -368,6 +355,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button button4;
     }
 }

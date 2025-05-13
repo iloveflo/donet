@@ -137,6 +137,12 @@
     <Compile Include="Admin\Adimin.Designer.cs">
       <DependentUpon>Adimin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\TaiKhoan.Designer.cs">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhanVien\XemDatHang_UserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -257,6 +263,9 @@
     </Compile>
     <EmbeddedResource Include="Admin\Adimin.resx">
       <DependentUpon>Adimin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\TaiKhoan.resx">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVien\XemDatHang_UserControl.resx">
       <DependentUpon>XemDatHang_UserControl.cs</DependentUpon>

@@ -40,11 +40,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(225, 214);
+            this.label3.Location = new System.Drawing.Point(216, 214);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 22);
+            this.label3.Size = new System.Drawing.Size(116, 22);
             this.label3.TabIndex = 40;
-            this.label3.Text = "UserName";
+            this.label3.Text = "Tên tài khoản";
             // 
             // txtUsername
             // 
@@ -85,7 +85,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.button1.Location = new System.Drawing.Point(348, 314);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 43);
+            this.button1.Size = new System.Drawing.Size(244, 43);
             this.button1.TabIndex = 48;
             this.button1.Text = "Lấy lại qua OTP";
             this.button1.UseVisualStyleBackColor = true;

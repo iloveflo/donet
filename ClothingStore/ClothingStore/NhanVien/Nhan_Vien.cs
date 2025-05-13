@@ -92,5 +92,11 @@ namespace ClothingStore.NhanVien
         {
             LoadControl(new XemDatHang_UserControl());
         }
+        private void btnXemTaiKhoan_Click(object sender, EventArgs e)
+        {
+            TaiKhoan doimatkhauForm = new TaiKhoan();
+            doimatkhauForm.Show();
+            this.Hide();
+        }
     }
 }

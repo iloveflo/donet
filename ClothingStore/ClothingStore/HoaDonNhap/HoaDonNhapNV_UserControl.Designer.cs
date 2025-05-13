@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button4 = new System.Windows.Forms.Button();
             this.dataGridViewHoaDonNhap = new System.Windows.Forms.DataGridView();
             this.textBoxMaNhanVien = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,19 +46,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHoaDonNhap)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.Location = new System.Drawing.Point(699, 541);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(147, 42);
-            this.button4.TabIndex = 93;
-            this.button4.Text = "ReLoad";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.btnHienThi_Click);
             // 
             // dataGridViewHoaDonNhap
             // 
@@ -230,21 +219,31 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(347, 535);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button1.Location = new System.Drawing.Point(317, 543);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 55);
+            this.button1.Size = new System.Drawing.Size(201, 38);
             this.button1.TabIndex = 94;
             this.button1.Text = "Lập Hóa Đơn Nhập";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnThem_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(671, 541);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(121, 40);
+            this.button2.TabIndex = 95;
+            this.button2.Text = "Xuất hóa đơn";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnXuatHoaDonNhap_Click);
+            // 
             // HoaDonNhapNV_UserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.dataGridViewHoaDonNhap);
             this.Controls.Add(this.textBoxMaNhanVien);
             this.Controls.Add(this.label7);
@@ -271,8 +270,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridViewHoaDonNhap;
         private System.Windows.Forms.TextBox textBoxMaNhanVien;
         private System.Windows.Forms.Label label7;
@@ -291,5 +288,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

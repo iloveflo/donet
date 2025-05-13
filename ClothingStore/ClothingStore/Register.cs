@@ -74,11 +74,12 @@ namespace ClothingStore
             string rePassword = txtRePassword.Text.Trim();
             string maTaiKhoan = txtMaTaiKhoan.Text.Trim();
             string email = txtEmail.Text.Trim();
+            string captcha = txtCaptcha.Text.Trim();
 
             // 🔹 Kiểm tra rỗng
             if (string.IsNullOrEmpty(hoTen) || string.IsNullOrEmpty(soDienThoai) || string.IsNullOrEmpty(diaChi) ||
                 string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(rePassword) ||
-                string.IsNullOrEmpty(maTaiKhoan)|| string.IsNullOrEmpty(email))
+                string.IsNullOrEmpty(maTaiKhoan)|| string.IsNullOrEmpty(email)|| string.IsNullOrEmpty(captcha))
             {
                 MessageBox.Show("Hãy nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

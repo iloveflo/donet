@@ -48,7 +48,7 @@
             this.label37.BackColor = System.Drawing.Color.White;
             this.label37.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label37.Location = new System.Drawing.Point(429, 87);
+            this.label37.Location = new System.Drawing.Point(429, 54);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(212, 33);
             this.label37.TabIndex = 4;
@@ -61,9 +61,9 @@
             this.label2.ForeColor = System.Drawing.Color.Blue;
             this.label2.Location = new System.Drawing.Point(211, 326);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 22);
+            this.label2.Size = new System.Drawing.Size(118, 22);
             this.label2.TabIndex = 37;
-            this.label2.Text = "NewPassword";
+            this.label2.Text = "Mật khẩu mới";
             // 
             // label1
             // 
@@ -72,9 +72,9 @@
             this.label1.ForeColor = System.Drawing.Color.Blue;
             this.label1.Location = new System.Drawing.Point(211, 247);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 44);
+            this.label1.Size = new System.Drawing.Size(82, 22);
             this.label1.TabIndex = 38;
-            this.label1.Text = "Password\r\n\r\n";
+            this.label1.Text = "Mật khẩu";
             // 
             // label3
             // 
@@ -83,9 +83,9 @@
             this.label3.ForeColor = System.Drawing.Color.Blue;
             this.label3.Location = new System.Drawing.Point(211, 172);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 22);
+            this.label3.Size = new System.Drawing.Size(116, 22);
             this.label3.TabIndex = 39;
-            this.label3.Text = "UserName";
+            this.label3.Text = "Tên tài khoản";
             // 
             // label4
             // 
@@ -94,9 +94,9 @@
             this.label4.ForeColor = System.Drawing.Color.Blue;
             this.label4.Location = new System.Drawing.Point(211, 407);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(202, 22);
+            this.label4.Size = new System.Drawing.Size(188, 22);
             this.label4.TabIndex = 40;
-            this.label4.Text = "Re-Enter NewPassword";
+            this.label4.Text = "Nhập lại mật khẩu mới";
             // 
             // txtReEnterNewPassword
             // 
@@ -136,7 +136,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.button1.Location = new System.Drawing.Point(435, 493);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 70);
+            this.button1.Size = new System.Drawing.Size(178, 70);
             this.button1.TabIndex = 45;
             this.button1.Text = "Đổi Mật Khẩu";
             this.button1.UseVisualStyleBackColor = true;
@@ -158,11 +158,11 @@
             // chkShowPassword
             // 
             this.chkShowPassword.AutoSize = true;
-            this.chkShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.chkShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.chkShowPassword.ForeColor = System.Drawing.SystemColors.Highlight;
             this.chkShowPassword.Location = new System.Drawing.Point(714, 396);
             this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(223, 36);
+            this.chkShowPassword.Size = new System.Drawing.Size(191, 33);
             this.chkShowPassword.TabIndex = 47;
             this.chkShowPassword.Text = "Hiện Mật Khẩu";
             this.chkShowPassword.UseVisualStyleBackColor = true;
@@ -174,7 +174,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(974, 770);
+            this.ClientSize = new System.Drawing.Size(974, 649);
             this.Controls.Add(this.chkShowPassword);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button1);

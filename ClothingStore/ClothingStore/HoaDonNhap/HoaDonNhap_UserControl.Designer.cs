@@ -45,7 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.dataGridViewHoaDonNhap = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHoaDonNhap)).BeginInit();
             this.SuspendLayout();
             // 
@@ -216,22 +216,21 @@
             this.dataGridViewHoaDonNhap.TabIndex = 74;
             this.dataGridViewHoaDonNhap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHoaDonNhap_CellClick);
             // 
-            // button4
+            // button1
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.Location = new System.Drawing.Point(677, 538);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(147, 42);
-            this.button4.TabIndex = 75;
-            this.button4.Text = "ReLoad";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.btnHienThi_Click);
+            this.button1.Location = new System.Drawing.Point(528, 540);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 40);
+            this.button1.TabIndex = 75;
+            this.button1.Text = "Xuất hóa đơn";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnXuatHoaDonNhap_Click);
             // 
             // HoaDonNhap_UserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridViewHoaDonNhap);
             this.Controls.Add(this.textBoxMaNhanVien);
             this.Controls.Add(this.label7);
@@ -276,6 +275,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.DataGridView dataGridViewHoaDonNhap;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button1;
     }
 }

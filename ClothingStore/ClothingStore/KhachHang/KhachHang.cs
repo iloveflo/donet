@@ -17,6 +17,7 @@ namespace ClothingStore.KhachHang
     {
         private string connectionString = DatabaseHelper.ConnectionString;
         private MySqlConnection conn;
+        private int x=0;
 
         public KhachHang()
         {
@@ -188,6 +189,7 @@ namespace ClothingStore.KhachHang
                         if (!string.IsNullOrEmpty(anh))
                         {
                             pictureBox1.ImageLocation = anh;
+                            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                         }
                         else
                         {
@@ -287,6 +289,41 @@ namespace ClothingStore.KhachHang
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
+            DialogResult result = MessageBox.Show("Khách hàng đã chắc chắn ẤN đặt hàng chưa? Nếu KHÔNG thì giỏ hàng của bạn sẽ bị làm rỗng !!! ", "Xác nhận", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+                return;
+            }
+
+            if(result == DialogResult.Yes)
+            {
+                MessageBox.Show(" Hẹn gặp lại bạn ở những lần mua sắm tiếp theo !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            if (result == DialogResult.No)
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    try
+                    {
+                        conn.Open();
+
+                        string deleteQuery = "DELETE FROM GioHang WHERE MaKhachHang = @MaKhachHang";
+                        MySqlCommand cmd = new MySqlCommand(deleteQuery, conn);
+                        cmd.Parameters.AddWithValue("@MaKhachHang", SessionManager.MaTaiKhoanDangNhap);
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Đã xóa toàn bộ mặt hàng trong giỏ hàng của bạn, hẹn gặp lại bạn ở những lần mua sắm tiếp theo !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi khi xóa giỏ hàng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+            }
             try
             {
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -326,12 +363,68 @@ namespace ClothingStore.KhachHang
             doimatkhauForm.Show();
             this.Hide();
         }
+
+        private void btnXemTaiKhoan_Click(object sender,EventArgs e)
+        {
+            TaiKhoan doimatkhauForm = new TaiKhoan();
+            doimatkhauForm.Show();
+            this.Hide();
+        }
+
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Khách hàng đã chắc chắn ẤN đặt hàng chưa? Nếu KHÔNG thì giỏ hàng của bạn sẽ bị làm rỗng !!! ", "Xác nhận", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Cancel)
+            {
+                return;
+            }
+
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show(" Hẹn gặp lại bạn ở những lần mua sắm tiếp theo !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            if (result == DialogResult.No)
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    try
+                    {
+                        conn.Open();
+
+                        string deleteQuery = "DELETE FROM GioHang WHERE MaKhachHang = @MaKhachHang";
+                        MySqlCommand cmd = new MySqlCommand(deleteQuery, conn);
+                        cmd.Parameters.AddWithValue("@MaKhachHang", SessionManager.MaTaiKhoanDangNhap);
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Đã xóa toàn bộ mặt hàng trong giỏ hàng của bạn, hẹn gặp lại bạn ở những lần mua sắm tiếp theo !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi khi xóa giỏ hàng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+            }
+            // Quay lại form chính
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string updateQuery = "UPDATE taikhoan SET DangNhap = 0 WHERE MaTaiKhoan = @MaTaiKhoan";
+                MySqlCommand cmd = new MySqlCommand(updateQuery, conn);
+                cmd.Parameters.AddWithValue("@MaTaiKhoan", SessionManager.MaTaiKhoanDangNhap);
+                cmd.ExecuteNonQuery();
+            }
+
+            // Sau khi update thành công, clear session
+            SessionManager.ClearSession();
+
             Main mainForm = new Main();
             mainForm.Show();
-            this.Close();
+            this.Hide();
         }
+
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             try

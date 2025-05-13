@@ -217,7 +217,7 @@ namespace ClothingStore.HoaDonBan
 
                         // Ghi file
                         string safeSoHoaDon = soHoaDon.Replace("/", "_").Replace("\\", "_").Replace(":", "_");
-                        string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), $"HoaDon_{safeSoHoaDon}.xlsx");
+                        string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), $"HoaDonBan_{safeSoHoaDon}.xlsx");
 
                         wb.SaveAs(filePath);
                         MessageBox.Show($"✅ Đã xuất hóa đơn ra Excel thành công!\nFile: {filePath}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
