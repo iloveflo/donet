@@ -52,10 +52,10 @@
             // 
             // textboxTenQuanAo
             // 
-            this.textboxTenQuanAo.Location = new System.Drawing.Point(411, 169);
+            this.textboxTenQuanAo.Location = new System.Drawing.Point(411, 179);
             this.textboxTenQuanAo.Multiline = true;
             this.textboxTenQuanAo.Name = "textboxTenQuanAo";
-            this.textboxTenQuanAo.Size = new System.Drawing.Size(181, 32);
+            this.textboxTenQuanAo.Size = new System.Drawing.Size(181, 22);
             this.textboxTenQuanAo.TabIndex = 49;
             // 
             // label44

@@ -40,7 +40,7 @@
             this.label37.BackColor = System.Drawing.Color.White;
             this.label37.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label37.Location = new System.Drawing.Point(272, 82);
+            this.label37.Location = new System.Drawing.Point(226, 42);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(271, 33);
             this.label37.TabIndex = 57;
@@ -50,7 +50,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Location = new System.Drawing.Point(278, 245);
+            this.button2.Location = new System.Drawing.Point(259, 259);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(118, 44);
             this.button2.TabIndex = 56;
@@ -61,7 +61,7 @@
             // txtOTP
             // 
             this.txtOTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtOTP.Location = new System.Drawing.Point(278, 176);
+            this.txtOTP.Location = new System.Drawing.Point(232, 164);
             this.txtOTP.Name = "txtOTP";
             this.txtOTP.Size = new System.Drawing.Size(232, 34);
             this.txtOTP.TabIndex = 55;
@@ -71,7 +71,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Location = new System.Drawing.Point(157, 188);
+            this.label5.Location = new System.Drawing.Point(116, 176);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 22);
             this.label5.TabIndex = 54;

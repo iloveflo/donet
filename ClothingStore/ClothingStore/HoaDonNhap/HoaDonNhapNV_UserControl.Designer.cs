@@ -150,10 +150,11 @@
             // 
             // comboBoxNhaCungCap
             // 
+            this.comboBoxNhaCungCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.comboBoxNhaCungCap.FormattingEnabled = true;
-            this.comboBoxNhaCungCap.Location = new System.Drawing.Point(359, 119);
+            this.comboBoxNhaCungCap.Location = new System.Drawing.Point(356, 115);
             this.comboBoxNhaCungCap.Name = "comboBoxNhaCungCap";
-            this.comboBoxNhaCungCap.Size = new System.Drawing.Size(229, 24);
+            this.comboBoxNhaCungCap.Size = new System.Drawing.Size(229, 33);
             this.comboBoxNhaCungCap.TabIndex = 82;
             // 
             // textBoxMaQuanAo
@@ -167,7 +168,7 @@
             // textBoxSoHoaDonNhap
             // 
             this.textBoxSoHoaDonNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxSoHoaDonNhap.Location = new System.Drawing.Point(359, 57);
+            this.textBoxSoHoaDonNhap.Location = new System.Drawing.Point(356, 59);
             this.textBoxSoHoaDonNhap.Name = "textBoxSoHoaDonNhap";
             this.textBoxSoHoaDonNhap.Size = new System.Drawing.Size(232, 30);
             this.textBoxSoHoaDonNhap.TabIndex = 80;

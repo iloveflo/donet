@@ -19,6 +19,8 @@ namespace ClothingStore.Admin
         {
             InitializeComponent();
             LoadKhachHang(); // Hiển thị dữ liệu khi mở form
+            btnLuu.Enabled = false;
+            btnHuy.Enabled = false;
         }
         private void LoadKhachHang()
         {
@@ -116,9 +118,11 @@ namespace ClothingStore.Admin
 
             // Cho phép chỉnh sửa các TextBox
             txtMaKhachHang.Enabled = false;
-            button1.Enabled = false;
-            button4.Enabled = false;
-
+            btnTimKiem.Enabled = false;
+            btnXoa.Enabled = false;
+            btnHuy.Enabled = true;
+            btnLuu.Enabled = true;
+            btnSua.Enabled = false;
         }
         private void btnLuu_Click(object sender, EventArgs e)
         {
@@ -185,8 +189,11 @@ namespace ClothingStore.Admin
                     LoadKhachHang();
 
                     txtMaKhachHang.Enabled = true;
-                    button1.Enabled = true;
-                    button4.Enabled = true;
+                    btnTimKiem.Enabled = true;
+                    btnXoa.Enabled = true;
+                    btnSua.Enabled = true;
+                    btnLuu.Enabled = false;
+                    btnHuy.Enabled = false;
                 }
                 catch (Exception ex)
                 {
@@ -198,8 +205,11 @@ namespace ClothingStore.Admin
         private void btnHuy_click(object sender, EventArgs e)
         {
             txtMaKhachHang.Enabled = true;
-            button1.Enabled = true;
-            button4.Enabled = true;
+            btnTimKiem.Enabled = true;
+            btnXoa.Enabled = true;
+            btnLuu.Enabled = false;
+            btnHuy.Enabled = false;
+            btnSua .Enabled = true;
         }
 
         // 🟢 TÌM KIẾM KHÁCH HÀNG THEO MÃ KHÁCH HÀNG

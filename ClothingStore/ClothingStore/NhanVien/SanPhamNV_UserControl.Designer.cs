@@ -108,10 +108,10 @@
             // 
             // txtDonGiaBan
             // 
-            this.txtDonGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtDonGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtDonGiaBan.Location = new System.Drawing.Point(530, 252);
             this.txtDonGiaBan.Name = "txtDonGiaBan";
-            this.txtDonGiaBan.Size = new System.Drawing.Size(120, 30);
+            this.txtDonGiaBan.Size = new System.Drawing.Size(120, 22);
             this.txtDonGiaBan.TabIndex = 106;
             // 
             // cboDoiTuong
@@ -164,18 +164,18 @@
             // 
             // txtTenQuanAo
             // 
-            this.txtTenQuanAo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTenQuanAo.Location = new System.Drawing.Point(256, 102);
+            this.txtTenQuanAo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTenQuanAo.Location = new System.Drawing.Point(255, 109);
             this.txtTenQuanAo.Name = "txtTenQuanAo";
-            this.txtTenQuanAo.Size = new System.Drawing.Size(120, 30);
+            this.txtTenQuanAo.Size = new System.Drawing.Size(120, 22);
             this.txtTenQuanAo.TabIndex = 99;
             // 
             // txtMaQuanAo
             // 
-            this.txtMaQuanAo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtMaQuanAo.Location = new System.Drawing.Point(256, 52);
+            this.txtMaQuanAo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtMaQuanAo.Location = new System.Drawing.Point(255, 59);
             this.txtMaQuanAo.Name = "txtMaQuanAo";
-            this.txtMaQuanAo.Size = new System.Drawing.Size(120, 30);
+            this.txtMaQuanAo.Size = new System.Drawing.Size(120, 22);
             this.txtMaQuanAo.TabIndex = 98;
             // 
             // label14

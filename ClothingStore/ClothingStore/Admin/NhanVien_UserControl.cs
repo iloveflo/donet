@@ -20,6 +20,8 @@ namespace ClothingStore.Admin
             InitializeComponent();
             LoadComboBoxData();
             LoadDataGridView();
+            btnLuu.Enabled = false;
+            btnHuy.Enabled = false;
         }
         private void LoadComboBoxData()
         {
@@ -247,17 +249,21 @@ namespace ClothingStore.Admin
         private void btnSua_Click(object sender, EventArgs e)
         {
             txtMaNhanVien.Enabled = false;
-            button1.Enabled = false;
+            btnThem.Enabled = false;
             btnXoa.Enabled = false;
-            button3.Enabled = false;
+            btnTimKiem.Enabled = false;
+            btnHuy.Enabled = true;
+            btnLuu.Enabled = true;
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
             txtMaNhanVien.Enabled = true;
-            button1.Enabled = true;
+            btnThem.Enabled = true;
             btnXoa.Enabled = true;
-            button3.Enabled = true;
+            btnTimKiem.Enabled = true;
+            btnLuu.Enabled=false;
+            btnHuy.Enabled=false;
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
@@ -334,6 +340,10 @@ namespace ClothingStore.Admin
 
                     MessageBox.Show("Đã cập nhật thông tin nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadDataGridView();
+                    btnHuy.Enabled = false;
+                    btnLuu.Enabled = false;
+                    btnThem.Enabled = true;
+                    btnXoa.Enabled = true;
                 }
                 catch (Exception ex)
                 {

@@ -25,6 +25,7 @@ namespace ClothingStore.KhachHang
             conn = new MySqlConnection(connectionString);
             LoadComboBoxes();
             LoadDataGridView();
+            btnXoa.Enabled = false;
         }
 
         private void LoadComboBoxes()
@@ -518,13 +519,13 @@ namespace ClothingStore.KhachHang
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            if (string.IsNullOrWhiteSpace(textBoxSLDat.Text))
             {
                 MessageBox.Show("Vui lòng nhập số lượng đặt!");
                 return;
             }
 
-            if (!int.TryParse(textBox1.Text.Trim(), out int soLuong))
+            if (!int.TryParse(textBoxSLDat.Text.Trim(), out int soLuong))
             {
                 MessageBox.Show("Số lượng đặt phải là một số nguyên hợp lệ!");
                 return;
@@ -621,6 +622,10 @@ namespace ClothingStore.KhachHang
                 dataGridView1.DataSource = dt;
 
                 label4.Text = "Giỏ hàng của bạn";
+                btnXoa.Enabled = true;
+                btnTimKiem.Enabled = false;
+                btnThemVaoGio.Enabled = false;
+                textBoxSLDat.Enabled = false;
             }
             catch (Exception ex)
             {
@@ -729,6 +734,10 @@ namespace ClothingStore.KhachHang
             txtMaQuanAo.Clear();
             txtTenQuanAo.Clear();
             txtDonGiaBan.Clear();
+            btnXoa.Enabled = false;
+            btnTimKiem.Enabled = true;
+            btnThemVaoGio.Enabled = true;
+            textBoxSLDat.Enabled = true;
         }
     }
 }

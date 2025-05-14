@@ -68,7 +68,7 @@
             // 
             // txtTenQuanAo
             // 
-            this.txtTenQuanAo.Location = new System.Drawing.Point(477, 155);
+            this.txtTenQuanAo.Location = new System.Drawing.Point(477, 144);
             this.txtTenQuanAo.Name = "txtTenQuanAo";
             this.txtTenQuanAo.Size = new System.Drawing.Size(181, 22);
             this.txtTenQuanAo.TabIndex = 40;

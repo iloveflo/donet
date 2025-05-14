@@ -138,10 +138,11 @@
             // 
             // comboBoxNhaCungCap
             // 
+            this.comboBoxNhaCungCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.comboBoxNhaCungCap.FormattingEnabled = true;
             this.comboBoxNhaCungCap.Location = new System.Drawing.Point(337, 116);
             this.comboBoxNhaCungCap.Name = "comboBoxNhaCungCap";
-            this.comboBoxNhaCungCap.Size = new System.Drawing.Size(229, 24);
+            this.comboBoxNhaCungCap.Size = new System.Drawing.Size(229, 33);
             this.comboBoxNhaCungCap.TabIndex = 64;
             // 
             // textBoxMaQuanAo
